@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Services — Spectra Group Studios</title>
+  <meta name="description" content="Six studios. One ecosystem. Spectra Group offers media production, entertainment, talent management, business strategy, web & AI, and motion & animation for brands and creators across Africa." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" /></noscript>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-mark">
+          <img src="images/logo.webp" alt="Spectra Group" class="logo-img"
+               onerror="this.closest('.logo-mark').classList.add('logo-fallback')">
+          <svg class="logo-fallback-svg" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <polygon points="16,2 30,10 30,26 16,34 2,26 2,10" stroke="white" stroke-width="1.2" fill="none"/>
+            <line x1="16" y1="2" x2="2" y2="10" style="stroke:var(--talent);stroke-width:1.5px"/>
+            <line x1="2" y1="10" x2="2" y2="26" style="stroke:var(--media);stroke-width:1.5px"/>
+            <line x1="2" y1="26" x2="16" y2="34" style="stroke:var(--events);stroke-width:1.5px"/>
+            <line x1="16" y1="34" x2="30" y2="26" style="stroke:var(--web);stroke-width:1.5px"/>
+            <line x1="30" y1="26" x2="30" y2="10" style="stroke:var(--motion);stroke-width:1.5px"/>
+            <line x1="30" y1="10" x2="16" y2="2" style="stroke:var(--business);stroke-width:1.5px"/>
+          </svg>
+        </div>
+        <span>SPECTRA<em>GROUP</em></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Start a Project</a>
+      </div>
+      <a href="contact.html" class="nav-cta">Start a Project</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Start a Project</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-slides">
+      <div class="page-hero-slide hero-color-media active"></div>
+      <div class="page-hero-slide hero-color-events"></div>
+      <div class="page-hero-slide hero-color-talent"></div>
+      <div class="page-hero-slide hero-color-web"></div>
+      <div class="page-hero-slide hero-color-motion"></div>
+      <div class="page-hero-slide hero-color-business"></div>
+    </div>
+    <canvas data-particles data-density="1" aria-hidden="true"></canvas>
+    <div class="hero-overlay"></div>
+
+    <div class="page-hero-content">
+      <span class="page-hero-label">Six Studios. One Ecosystem.</span>
+      <h1 class="page-hero-title">Every service you need. <em>Zero fragmentation.</em></h1>
+      <p class="page-hero-sub">We don't just offer services — we deploy whole studios. Each division is led by specialists, producing at the standard your brand deserves.</p>
+    </div>
+
+    <div class="studio-pills six-pills">
+      <a href="#media"         class="studio-pill pill-media">Creative Media</a>
+      <a href="#entertainment" class="studio-pill pill-events">Entertainment</a>
+      <a href="#talent"        class="studio-pill pill-talent">Talent Management</a>
+      <a href="#business"      class="studio-pill pill-business">Business Management</a>
+      <a href="#web"           class="studio-pill pill-web">Web, App & AI</a>
+      <a href="#motion"        class="studio-pill pill-motion">Motion & Animation</a>
+    </div>
+  </section>
+
+  <!-- SPECTRUM GATE -->
+  <div class="spectrum-gate">
+    <div class="sg-prism">
+      <svg viewBox="0 0 80 92" fill="none">
+        <polygon points="40,4 76,28 76,64 40,88 4,64 4,28" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" fill="none"/>
+        <line x1="40" y1="4"  x2="4"  y2="28" stroke="#F97316" stroke-width="1.5"/>
+        <line x1="4"  y1="28" x2="4"  y2="64" stroke="#14B8A6" stroke-width="1.5"/>
+        <line x1="4"  y1="64" x2="40" y2="88" stroke="#F5B400" stroke-width="1.5"/>
+        <line x1="40" y1="88" x2="76" y2="64" stroke="#8B5CF6" stroke-width="1.5"/>
+        <line x1="76" y1="64" x2="76" y2="28" stroke="#3B82F6" stroke-width="1.5"/>
+        <line x1="76" y1="28" x2="40" y2="4"  stroke="#EF4444" stroke-width="1.5"/>
+      </svg>
+    </div>
+    <p class="sg-text">Six studios working under one roof. When your project needs more than one, they talk to each other — saving you time, budget, and the frustration of managing scattered agencies.</p>
+  </div>
+
+  <!-- STICKY STUDIO NAV -->
+  <div class="sticky-studio-nav" id="stickyNav">
+    <div class="ssn-inner">
+      <a class="ssn-item" data-target="media"         href="#media">Creative Media</a>
+      <a class="ssn-item" data-target="entertainment" href="#entertainment">Entertainment</a>
+      <a class="ssn-item" data-target="talent"        href="#talent">Talent Mgmt</a>
+      <a class="ssn-item" data-target="business"      href="#business">Business Mgmt</a>
+      <a class="ssn-item" data-target="web"           href="#web">Web & AI</a>
+      <a class="ssn-item" data-target="motion"        href="#motion">Motion</a>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- STUDIO 01 — SPECTRA MEDIA                  -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="studio-section" id="media">
+    <div class="studio-hero-band media-band">
+      <canvas data-particles data-density="0.6" aria-hidden="true"></canvas>
+      <div class="studio-band-overlay"></div>
+      <div class="studio-band-content">
+      <div class="sb-text">
+<span class="studio-eyebrow media-eyebrow">Studio 01 — Spectra Media</span>
+        <h2>Your brand deserves to be <em>seen</em>, not glanced at.</h2>
+        <p>From campaign photography that shifts perception to cinematic brand films that own a room — we produce visuals built to earn attention and hold it.</p>
+      </div>
+      <div class="sb-visual" data-div="media">
+        <span class="sb-visual-num">01</span>
+        <svg class="sb-visual-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><circle cx="12" cy="13.5" r="4.2"/><path d="M4 8.5h3.2l1.8-2.5h6l1.8 2.5H20v11H4z"/></svg>
+      </div>
+    </div>
+    </div>
+
+    <div class="studio-cards-section">
+      <div class="studio-cards-grid" style="max-width:var(--container);margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem);">
+
+        <div class="svc-conv-card media-card" data-studio="media" data-card="photography">
+        <div class="scc-card-glow"></div>
+          <div class="scc-accent-bar media-bar"></div>
+          <div class="scc-icon media-icon-bg">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          </div>
+          <div class="scc-body">
+            <h3>Photography & Visual Campaigns</h3>
+            <p class="scc-hook">"One great image does what a thousand words never could."</p>
+            <div class="scc-more" id="svc-more-1"><div>
+              <p class="scc-desc">Commercial and brand photography built for campaigns, editorial features, product launches, and executive portraits — all produced to publication standard.</p>
+              <ul class="scc-outcomes">
+              <li>Brand, product & editorial photography</li>
+              <li>Campaign visual direction</li>
+              <li>Event & lifestyle coverage</li>
+              <li>Studio & location shoots</li>
+            </ul>
+            </div></div>
+            <button class="scc-view-btn" type="button" data-target="svc-more-1">
+              <span class="scc-view-label">View more</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="scc-footer">
+            <p class="scc-for">For: Brands, Startups, Fashion Labels, Restaurants, Real Estate</p>
+            <button class="scc-expand-btn media-expand" onclick="openOverlay('media','photography')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+
+        <div class="svc-conv-card media-card" data-studio="media" data-card="videography">
+        <div class="scc-card-glow"></div>
+          <div class="scc-accent-bar media-bar"></div>
+          <div class="scc-icon media-icon-bg">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+          </div>
+          <div class="scc-body">
+            <h3>Videography & Brand Films</h3>
+            <p class="scc-hook">"Motion captures emotion. Story creates loyalty."</p>
+            <div class="scc-more" id="svc-more-2"><div>
+              <p class="scc-desc">Corporate videos, commercial spots, music videos, social reels, and documentary-style brand films — all directed, shot, and post-produced in-house.</p>
+              <ul class="scc-outcomes">
+              <li>Brand films & commercials</li>
+              <li>Music video production</li>
+              <li>Social media reels & short-form</li>
+              <li>Event recap & highlight films</li>
+            </ul>
+            </div></div>
+            <button class="scc-view-btn" type="button" data-target="svc-more-2">
+              <span class="scc-view-label">View more</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="scc-footer">
+            <p class="scc-for">For: Music Artists, Brands, Corporates, Event Organisers</p>
+            <button class="scc-expand-btn media-expand" onclick="openOverlay('media','videography')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+
+        <div class="svc-conv-card media-card" data-studio="media" data-card="graphics">
+        <div class="scc-card-glow"></div>
+          <div class="scc-accent-bar media-bar"></div>
+          <div class="scc-icon media-icon-bg">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"/><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"/><line x1="14.83" y1="9.17" x2="19.07" y2="4.93"/><line x1="4.93" y1="19.07" x2="9.17" y2="14.83"/></svg>
+          </div>
+          <div class="scc-body">
+            <h3>Graphic Design & Visual Identity</h3>
+            <p class="scc-hook">"Your logo is not your brand. Your entire visual system is."</p>
+            <div class="scc-more" id="svc-more-3"><div>
+              <p class="scc-desc">Logo systems, brand identities, marketing collateral, packaging, social graphics, and digital assets — all designed with strategic intent, not just aesthetics.</p>
+              <ul class="scc-outcomes">
+              <li>Logo & brand identity design</li>
+              <li>Marketing & print collateral</li>
+              <li>Social media templates</li>
+              <li>Packaging & product design</li>
+            </ul>
+            </div></div>
+            <button class="scc-view-btn" type="button" data-target="svc-more-3">
+              <span class="scc-view-label">View more</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="scc-footer">
+            <p class="scc-for">For: Startups, SMEs, Fashion, FMCG, Personal Brands</p>
+            <button class="scc-expand-btn media-expand" onclick="openOverlay('media','graphics')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+
+        <div class="svc-conv-card media-card" data-studio="media" data-card="content">
+        <div class="scc-card-glow"></div>
+          <div class="scc-accent-bar media-bar"></div>
+          <div class="scc-icon media-icon-bg">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <div class="scc-body">
+            <h3>Digital Content & Social Media</h3>
+            <p class="scc-hook">"Presence without strategy is just noise."</p>
+            <div class="scc-more" id="svc-more-4"><div>
+              <p class="scc-desc">Content strategy, social media management, paid advertising, and digital campaigns — built around conversion, not just likes. We manage your digital presence like it's our own business.</p>
+              <ul class="scc-outcomes">
+              <li>Social media strategy & management</li>
+              <li>Paid advertising (Meta, Google)</li>
+              <li>Content calendar & execution</li>
+              <li>Campaign planning & analytics</li>
+            </ul>
+            </div></div>
+            <button class="scc-view-btn" type="button" data-target="svc-more-4">
+              <span class="scc-view-label">View more</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="scc-footer">
+            <p class="scc-for">For: SMEs, Hospitality, Fashion, Faith Orgs, Real Estate</p>
+            <button class="scc-expand-btn media-expand" onclick="openOverlay('media','content')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+
+        <div class="svc-conv-card media-card" data-studio="media" data-card="livestream">
+        <div class="scc-card-glow"></div>
+          <div class="scc-accent-bar media-bar"></div>
+          <div class="scc-icon media-icon-bg">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M5.26 4.37A9.93 9.93 0 0 0 2 12c0 2.9 1.24 5.53 3.22 7.4"/><path d="M18.74 4.37A9.93 9.93 0 0 1 22 12a9.93 9.93 0 0 1-3.22 7.4"/><path d="M9.17 8.5A5 5 0 0 0 7 12a5 5 0 0 0 2.17 4.11"/><path d="M14.83 8.5A5 5 0 0 1 17 12a5 5 0 0 1-2.17 4.11"/><circle cx="12" cy="12" r="2"/></svg>
+          </div>
+          <div class="scc-body">
+            <h3>Livestream Production</h3>
+            <p class="scc-hook">"Live is where moments become movements."</p>
+            <div class="scc-more" id="svc-more-5"><div>
+              <p class="scc-desc">Multi-camera livestream setups, OBS-directed productions, church services, conferences, and online events broadcast at broadcast quality with real-time direction.</p>
+              <ul class="scc-outcomes">
+              <li>Multi-camera live production</li>
+              <li>Church & faith organisation streams</li>
+              <li>Corporate & conference streaming</li>
+              <li>Real-time graphics & overlays</li>
+            </ul>
+            </div></div>
+            <button class="scc-view-btn" type="button" data-target="svc-more-5">
+              <span class="scc-view-label">View more</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="scc-footer">
+            <p class="scc-for">For: Faith Orgs, Corporates, Concert Promoters, Conferences</p>
+            <button class="scc-expand-btn media-expand" onclick="openOverlay('media','livestream')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- STUDIO 02 — SPECTRA ENTERTAINMENT          -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="studio-section" id="entertainment">
+    <div class="studio-hero-band events-band">
+      <canvas data-particles data-density="0.6" aria-hidden="true"></canvas>
+      <div class="studio-band-overlay"></div>
+      <div class="studio-band-content">
+      <div class="sb-text">
+<span class="studio-eyebrow events-eyebrow">Studio 02 — Spectra Entertainment</span>
+        <h2>We don't just plan events. <em>We engineer atmosphere.</em></h2>
+        <p>From the first concept sketch to the final curtain — we design, produce, and manage experiences that people talk about long after they've left.</p>
+      </div>
+      <div class="sb-visual" data-div="events">
+        <span class="sb-visual-num">02</span>
+        <svg class="sb-visual-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M12 2.5a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0v-6a3 3 0 0 0-3-3z"/><path d="M19 10.5v1a7 7 0 0 1-14 0v-1M12 18.5v3m-4 0h8"/></svg>
+      </div>
+    </div>
+    </div>
+
+    <div class="studio-cards-section">
+      <div class="studio-cards-grid" style="max-width:var(--container);margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem);">
+
+        <div class="svc-conv-card events-card" data-studio="entertainment" data-card="corporate">
+        <div class="scc-card-glow"></div>
+          <div class="scc-accent-bar events-bar"></div>
+          <div class="scc-icon events-icon-bg">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-4 0v2M8 7V5a2 2 0 0 1 4 0v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+          </div>
+          <div class="scc-body">
+            <h3>Corporate Events & Conferences</h3>
+            <p class="scc-hook">"Your event reflects your brand. Make it unforgettable."</p>
+            <div class="scc-more" id="svc-more-6"><div>
+              <p class="scc-desc">Annual general meetings, product launches, press conferences, company retreats, and executive galas — planned, branded, and produced to reflect the quality of the organisation behind them.</p>
+              <ul class="scc-outcomes">
+              <li>Full event concept & planning</li>
+              <li>Venue selection & management</li>
+              <li>Corporate branding & décor</li>
+              <li>Technical production & AV</li>
+            </ul>
+            </div></div>
+            <button class="scc-view-btn" type="button" data-target="svc-more-6">
+              <span class="scc-view-label">View more</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="scc-footer">
+            <p class="scc-for">For: Corporations, Government Agencies, NGOs, Associations</p>
+            <button class="scc-expand-btn events-expand" onclick="openOverlay('entertainment','corporate')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+
+        <div class="svc-conv-card events-card" data-studio="entertainment" data-card="concerts">
+        <div class="scc-card-glow"></div>
+          <div class="scc-accent-bar events-bar"></div>
+          <div class="scc-icon events-icon-bg">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="scc-body">
+            <h3>Concerts & Live Shows</h3>
+            <p class="scc-hook">"A great concert is felt, not just heard."</p>
+            <div class="scc-more" id="svc-more-7"><div>
+              <p class="scc-desc">From intimate showcases to 5,000-capacity headline concerts — we manage stage design, technical production, artist logistics, ticketing strategy, and on-site coordination from first note to final bow.</p>
+              <ul class="scc-outcomes">
+              <li>Stage design & production build</li>
+              <li>Sound, lighting & visual effects</li>
+              <li>Artist booking & riders</li>
+              <li>Ticket strategy & crowd management</li>
+            </ul>
+            </div></div>
+            <button class="scc-view-btn" type="button" data-target="svc-more-7">
+              <span class="scc-view-label">View more</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="scc-footer">
+            <p class="scc-for">For: Music Artists, Promoters, Labels, Festival Organisers</p>
+            <button class="scc-expand-btn events-expand" onclick="openOverlay('entertainment','concerts')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+
+        <div class="svc-conv-card events-card" data-studio="entertainment" data-card="activation">
+        <div class="scc-card-glow"></div>
+          <div class="scc-accent-bar events-bar"></div>
+          <div class="scc-icon events-icon-bg">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <div class="scc-body">
+            <h3>Brand Activations</h3>
+            <p class="scc-hook">"If people feel your brand, they remember it forever."</p>
+            <div class="scc-more" id="svc-more-8"><div>
+              <p class="scc-desc">Pop-up experiences, brand launches, guerrilla activations, and experiential marketing that put your brand inside an emotion — turning audiences into advocates who share what they experienced.</p>
+              <ul class="scc-outcomes">
+              <li>Experiential concept development</li>
+              <li>Pop-up & launch activations</li>
+              <li>Consumer engagement design</li>
+              <li>Activation logistics & staffing</li>
+            </ul>
+            </div></div>
+            <button class="scc-view-btn" type="button" data-target="svc-more-8">
+              <span class="scc-view-label">View more</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="scc-footer">
+            <p class="scc-for">For: Consumer Brands, Retail, FMCG, Tech Launches</p>
+            <button class="scc-expand-btn events-expand" onclick="openOverlay('entertainment','activation')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- STUDIO 03 — SPECTRA TALENT MANAGEMENT      -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="studio-section" id="talent">
+    <div class="studio-hero-band talent-band">
+      <canvas data-particles data-density="0.6" aria-hidden="true"></canvas>
+      <div class="studio-band-overlay"></div>
+      <div class="studio-band-content">
+      <div class="sb-text">
+<span class="studio-eyebrow talent-eyebrow">Studio 03 — Spectra Talent Management</span>
+        <h2>Your talent is the asset. <em>We make sure it gets everything it deserves.</em></h2>
+        <p>We discover, represent, and develop Africa's most compelling creators — building the infrastructure that turns raw ability into sustained influence and real revenue.</p>
+      </div>
+      <div class="sb-visual" data-div="talent">
+        <span class="sb-visual-num">03</span>
+        <svg class="sb-visual-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M12 2.5l3.09 6.26L22 9.77l-5 4.87L18.18 22 12 18.5 5.82 22 7 14.64l-5-4.87 6.91-1.01z"/></svg>
+      </div>
+    </div>
+    </div>
+
+    <div class="studio-cards-section">
+      <div class="studio-cards-grid" style="max-width:var(--container);margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem);">
+
+        <div class="svc-conv-card talent-mgmt-card" data-studio="talent" data-card="representation">
+        <div class="scc-card-glow"></div>
+          <div class="scc-accent-bar talent-mgmt-bar"></div>
+          <div class="scc-icon talent-mgmt-icon-bg">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <div class="scc-body">
+            <h3>Talent Representation & Management</h3>
+            <p class="scc-hook">"Stop navigating your career alone. Get someone in your corner."</p>
+            <div class="scc-more" id="svc-more-9"><div>
+              <p class="scc-desc">We represent artists, creators, athletes, influencers, and public personalities — managing their professional relationships, negotiating deals, and building long-term career architecture that compounds over time.</p>
+              <ul class="scc-outcomes">
+              <li>Career strategy & long-term direction</li>
+              <li>Professional relationship management</li>
+              <li>Contract & deal negotiation</li>
+              <li>Schedule management & logistics</li>
+            </ul>
+            </div></div>
+            <button class="scc-view-btn" type="button" data-target="svc-more-9">
+              <span class="scc-view-label">View more</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="scc-footer">
+            <p class="scc-for">For: Artists, Influencers, Athletes, Content Creators, Public Figures</p>
+            <button class="scc-expand-btn talent-mgmt-expand" onclick="openOverlay('talent','representation')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+
+        <div class="svc-conv-card talent-mgmt-card" data-studio="talent" data-card="brand-dev">
+        <div class="scc-card-glow"></div>
+          <div class="scc-accent-bar talent-mgmt-bar"></div>
+          <div class="scc-icon talent-mgmt-icon-bg">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <div class="scc-body">
+            <h3>Personal Brand Development</h3>
+            <p class="scc-hook">"Your name is a brand. Build it before someone else defines it."</p>
+            <div class="scc-more" id="svc-more-10"><div>
+              <p class="scc-desc">From visual identity and content strategy to digital presence and market positioning — we build the personal brand architecture that makes talent magnetic, marketable, and impossible to ignore or replace.</p>
+              <ul class="scc-outcomes">
+              <li>Personal brand strategy & positioning</li>
+              <li>Visual identity & content system</li>
+              <li>Platform-specific content strategy</li>
+              <li>Digital presence audit & build</li>
+            </ul>
+            </div></div>
+            <button class="scc-view-btn" type="button" data-target="svc-more-10">
+              <span class="scc-view-label">View more</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="scc-footer">
+            <p class="scc-for">For: Artists, Entrepreneurs, Executives, Professionals, Creators</p>
+            <button class="scc-expand-btn talent-mgmt-expand" onclick="openOverlay('talent','brand-dev')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+
+        <div class="svc-conv-card talent-mgmt-card" data-studio="talent" data-card="brand-deals">
+        <div class="scc-card-glow"></div>
+          <div class="scc-accent-bar talent-mgmt-bar"></div>
+          <div class="scc-icon talent-mgmt-icon-bg">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="scc-body">
+            <h3>Brand Deals & Partnerships</h3>
+            <p class="scc-hook">"The right deal doesn't just pay — it elevates your entire career."</p>
+            <div class="scc-more" id="svc-more-11"><div>
+              <p class="scc-desc">We connect our talent roster with aligned brands, negotiate fair market value, manage contracts and deliverables, and ensure every partnership builds long-term equity — not just a one-time cheque.</p>
+              <ul class="scc-outcomes">
+              <li>Brand partnership sourcing</li>
+              <li>Rate negotiation at true market value</li>
+              <li>Contract management & compliance</li>
+              <li>Campaign delivery & brand integration</li>
+            </ul>
+            </div></div>
+            <button class="scc-view-btn" type="button" data-target="svc-more-11">
+              <span class="scc-view-label">View more</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="scc-footer">
+            <p class="scc-for">For: Influencers, Creators, Artists, Athletes, Public Personalities</p>
+            <button class="scc-expand-btn talent-mgmt-expand" onclick="openOverlay('talent','brand-deals')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+
+        <div class="svc-conv-card talent-mgmt-card" data-studio="talent" data-card="crisis">
+        <div class="scc-card-glow"></div>
+          <div class="scc-accent-bar talent-mgmt-bar"></div>
+          <div class="scc-icon talent-mgmt-icon-bg">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="scc-body">
+            <h3>Crisis & Reputation Management</h3>
+            <p class="scc-hook">"Reputation takes years to build and moments to lose. We protect both."</p>
+            <div class="scc-more" id="svc-more-12"><div>
+              <p class="scc-desc">From media scandals to public misunderstandings — we provide rapid response reputation management, strategic messaging, and narrative recovery planning that protects your image and your income.</p>
+              <ul class="scc-outcomes">
+              <li>Crisis response strategy</li>
+              <li>Narrative & message management</li>
+              <li>Media & PR intervention</li>
+              <li>Reputation recovery & rebuild</li>
+            </ul>
+            </div></div>
+            <button class="scc-view-btn" type="button" data-target="svc-more-12">
+              <span class="scc-view-label">View more</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="scc-footer">
+            <p class="scc-for">For: Public Figures, Executives, Artists, Corporates</p>
+            <button class="scc-expand-btn talent-mgmt-expand" onclick="openOverlay('talent','crisis')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- STUDIO 04 — SPECTRA BUSINESS MANAGEMENT    -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="studio-section" id="business">
+    <div class="studio-hero-band business-band">
+      <canvas data-particles data-density="0.6" aria-hidden="true"></canvas>
+      <div class="studio-band-overlay"></div>
+      <div class="studio-band-content">
+      <div class="sb-text">
+<span class="studio-eyebrow business-eyebrow">Studio 04 — Spectra Business Management</span>
+        <h2>Before the market sees you, <em>we've already built your position.</em></h2>
+        <p>Strategy that moves markets. Brand identity that commands respect. PR that controls the narrative. We build what's invisible so results show up where it counts.</p>
+      </div>
+      <div class="sb-visual" data-div="business">
+        <span class="sb-visual-num">04</span>
+        <svg class="sb-visual-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l3.5-4 3 3L19 7"/></svg>
+      </div>
+    </div>
+    </div>
+
+    <div class="studio-cards-section">
+      <div class="studio-cards-grid" style="max-width:var(--container);margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem);">
+
+        <div class="svc-conv-card business-card" data-studio="business" data-card="brand-strategy">
+        <div class="scc-card-glow"></div>
+          <div class="scc-accent-bar business-bar"></div>
+          <div class="scc-icon business-icon-bg">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="scc-body">
+            <h3>Brand Development & Positioning</h3>
+            <p class="scc-hook">"Brands are built with intention or they grow by accident."</p>
+            <div class="scc-more" id="svc-more-13"><div>
+              <p class="scc-desc">Corporate identity systems, brand voice, market positioning, and competitive differentiation — built so your brand communicates authority before a word is spoken.</p>
+              <ul class="scc-outcomes">
+              <li>Brand architecture & positioning</li>
+              <li>Corporate identity systems</li>
+              <li>Brand voice & tone development</li>
+              <li>Competitive market analysis</li>
+            </ul>
+            </div></div>
+            <button class="scc-view-btn" type="button" data-target="svc-more-13">
+              <span class="scc-view-label">View more</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="scc-footer">
+            <p class="scc-for">For: Corporations, SMEs, Startups, Faith Organisations</p>
+            <button class="scc-expand-btn business-expand" onclick="openOverlay('business','brand-strategy')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+
+        <div class="svc-conv-card business-card" data-studio="business" data-card="pr">
+        <div class="scc-card-glow"></div>
+          <div class="scc-accent-bar business-bar"></div>
+          <div class="scc-icon business-icon-bg">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <div class="scc-body">
+            <h3>Public Relations & Media Outreach</h3>
+            <p class="scc-hook">"Advertising is what you pay for. PR is what you earn."</p>
+            <div class="scc-more" id="svc-more-14"><div>
+              <p class="scc-desc">Strategic PR campaigns, media relations, press placements, spokesperson preparation, and crisis communication — building your authority in the rooms that matter before you even enter them.</p>
+              <ul class="scc-outcomes">
+              <li>Media relations & press strategy</li>
+              <li>Press release & media kit creation</li>
+              <li>Spokesperson coaching</li>
+              <li>Narrative control & media coverage</li>
+            </ul>
+            </div></div>
+            <button class="scc-view-btn" type="button" data-target="svc-more-14">
+              <span class="scc-view-label">View more</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="scc-footer">
+            <p class="scc-for">For: Brands, Executives, NGOs, Political Figures, Corporates</p>
+            <button class="scc-expand-btn business-expand" onclick="openOverlay('business','pr')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+
+        <div class="svc-conv-card business-card" data-studio="business" data-card="marketing">
+        <div class="scc-card-glow"></div>
+          <div class="scc-accent-bar business-bar"></div>
+          <div class="scc-icon business-icon-bg">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <div class="scc-body">
+            <h3>Marketing Strategy & Campaign Development</h3>
+            <p class="scc-hook">"Strategy without execution is a dream. Execution without strategy is a gamble."</p>
+            <div class="scc-more" id="svc-more-15"><div>
+              <p class="scc-desc">Go-to-market plans, integrated campaign strategies, customer acquisition frameworks, and ongoing marketing management that turns your spend into measurable revenue — not vanity metrics.</p>
+              <ul class="scc-outcomes">
+              <li>Go-to-market strategy</li>
+              <li>Integrated marketing campaigns</li>
+              <li>Customer acquisition frameworks</li>
+              <li>Marketing analytics & ROI tracking</li>
+            </ul>
+            </div></div>
+            <button class="scc-view-btn" type="button" data-target="svc-more-15">
+              <span class="scc-view-label">View more</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="scc-footer">
+            <p class="scc-for">For: SMEs, Startups, Retail, Real Estate, Consumer Brands</p>
+            <button class="scc-expand-btn business-expand" onclick="openOverlay('business','marketing')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- STUDIO 05 — SPECTRA WEB, APP & AI          -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="studio-section" id="web">
+    <div class="studio-hero-band web-band">
+      <canvas data-particles data-density="0.6" aria-hidden="true"></canvas>
+      <div class="studio-band-overlay"></div>
+      <div class="studio-band-content">
+      <div class="sb-text">
+<span class="studio-eyebrow web-eyebrow">Studio 05 — Spectra Web, App & AI</span>
+        <h2>Digital products that don't just look good — <em>they grow businesses.</em></h2>
+        <p>Websites that convert. Applications that automate. AI that thinks ahead. We build the digital infrastructure your business runs on — and the front door the world walks through.</p>
+      </div>
+      <div class="sb-visual" data-div="web">
+        <span class="sb-visual-num">05</span>
+        <svg class="sb-visual-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><polyline points="8 6 3 12 8 18"/><polyline points="16 6 21 12 16 18"/></svg>
+      </div>
+    </div>
+    </div>
+
+    <div class="studio-cards-section">
+      <div class="studio-cards-grid studio-cards-grid-4" style="max-width:var(--container);margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem);">
+
+        <div class="svc-conv-card web-card" data-studio="web" data-card="websites">
+        <div class="scc-card-glow"></div>
+          <div class="scc-accent-bar web-bar"></div>
+          <div class="scc-icon web-icon-bg">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <div class="scc-body">
+            <h3>Business Websites</h3>
+            <p class="scc-hook">"Your website is your 24/7 salesperson. Deploy it properly."</p>
+            <div class="scc-more" id="svc-more-16"><div>
+              <p class="scc-desc">Corporate websites, portfolio sites, landing pages, and SEO-optimised business platforms — designed to impress and engineered to convert visitors into customers.</p>
+              <ul class="scc-outcomes">
+              <li>Design, development & launch</li>
+              <li>SEO architecture built in</li>
+              <li>Mobile-first & performance optimised</li>
+              <li>Ongoing maintenance & updates</li>
+            </ul>
+            </div></div>
+            <button class="scc-view-btn" type="button" data-target="svc-more-16">
+              <span class="scc-view-label">View more</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="scc-footer">
+            <p class="scc-for">For: SMEs, Professionals, Brands, NGOs</p>
+            <button class="scc-expand-btn web-expand" onclick="openOverlay('web','websites')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+
+        <div class="svc-conv-card web-card" data-studio="web" data-card="ecommerce">
+        <div class="scc-card-glow"></div>
+          <div class="scc-accent-bar web-bar"></div>
+          <div class="scc-icon web-icon-bg">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          </div>
+          <div class="scc-body">
+            <h3>E-Commerce Platforms</h3>
+            <p class="scc-hook">"If your store is hard to buy from, they'll buy elsewhere."</p>
+            <div class="scc-more" id="svc-more-17"><div>
+              <p class="scc-desc">Full e-commerce builds with product catalogues, payment integration, inventory management, and conversion-optimised checkout flows — so selling online is as smooth as your product deserves.</p>
+              <ul class="scc-outcomes">
+              <li>Custom storefront development</li>
+              <li>Payment gateway integration</li>
+              <li>Inventory & order management</li>
+              <li>Conversion rate optimisation</li>
+            </ul>
+            </div></div>
+            <button class="scc-view-btn" type="button" data-target="svc-more-17">
+              <span class="scc-view-label">View more</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="scc-footer">
+            <p class="scc-for">For: Retail, Fashion, FMCG, Artisans, Product Brands</p>
+            <button class="scc-expand-btn web-expand" onclick="openOverlay('web','ecommerce')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+
+        <div class="svc-conv-card web-card" data-studio="web" data-card="mobile-apps">
+        <div class="scc-card-glow"></div>
+          <div class="scc-accent-bar web-bar"></div>
+          <div class="scc-icon web-icon-bg">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+          </div>
+          <div class="scc-body">
+            <h3>Mobile App Development</h3>
+            <p class="scc-hook">"Africans live on their phones. Meet them there."</p>
+            <div class="scc-more" id="svc-more-18"><div>
+              <p class="scc-desc">Native and cross-platform mobile applications for iOS and Android — from fintech tools to creator platforms, built with Nigerian market realities and global quality standards in mind.</p>
+              <ul class="scc-outcomes">
+              <li>iOS & Android development</li>
+              <li>UI/UX design & prototyping</li>
+              <li>App Store submission & launch</li>
+              <li>Post-launch support & updates</li>
+            </ul>
+            </div></div>
+            <button class="scc-view-btn" type="button" data-target="svc-more-18">
+              <span class="scc-view-label">View more</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="scc-footer">
+            <p class="scc-for">For: Startups, Corporates, Fintech, Edtech, Platforms</p>
+            <button class="scc-expand-btn web-expand" onclick="openOverlay('web','mobile-apps')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+
+        <div class="svc-conv-card web-card" data-studio="web" data-card="ai">
+        <div class="scc-card-glow"></div>
+          <div class="scc-accent-bar web-bar"></div>
+          <div class="scc-icon web-icon-bg">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/><circle cx="7.5" cy="14.5" r="1.5"/><circle cx="16.5" cy="14.5" r="1.5"/></svg>
+          </div>
+          <div class="scc-body">
+            <h3>AI Integration & Automation</h3>
+            <p class="scc-hook">"AI doesn't replace your team. It makes them 10× more capable."</p>
+            <div class="scc-more" id="svc-more-19"><div>
+              <p class="scc-desc">Custom AI chatbots, business process automation, intelligent analytics, and AI-powered content systems — integrated into your existing operations to save time, reduce cost, and unlock new capability.</p>
+              <ul class="scc-outcomes">
+              <li>Custom chatbot development</li>
+              <li>Business process automation</li>
+              <li>AI-powered content systems</li>
+              <li>Smart analytics & reporting</li>
+            </ul>
+            </div></div>
+            <button class="scc-view-btn" type="button" data-target="svc-more-19">
+              <span class="scc-view-label">View more</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="scc-footer">
+            <p class="scc-for">For: Businesses of all sizes ready to scale intelligently</p>
+            <button class="scc-expand-btn web-expand" onclick="openOverlay('web','ai')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Custom AI Strip -->
+      <div class="custom-ai-strip">
+        <div>
+          <div class="cai-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+          <div class="cai-text">
+            <h3>Custom AI Solutions for Nigerian Businesses</h3>
+            <p>We don't sell off-the-shelf AI — we build systems designed around your specific operations, your customer base, and the unique challenges of doing business in Nigeria. From customer service bots in Pidgin to AI-driven inventory systems, we make intelligence practical.</p>
+          </div>
+          <a href="https://wa.me/2347053815985?text=I%27m%20interested%20in%20a%20custom%20AI%20solution%20for%20my%20business" target="_blank" rel="noopener" class="cai-cta">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Discuss Your AI Project
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- STUDIO 06 — MOTION & ANIMATION             -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="studio-section" id="motion">
+    <div class="studio-hero-band motion-band">
+      <canvas data-particles data-density="0.6" aria-hidden="true"></canvas>
+      <div class="studio-band-overlay"></div>
+      <div class="studio-band-content">
+      <div class="sb-text">
+<span class="studio-eyebrow motion-eyebrow">Studio 06 — Motion & Animation</span>
+        <h2>Still visuals tell your story. <em>Motion makes them feel it.</em></h2>
+        <p>2D and 3D animation, motion graphics, kinetic typography, and animated brand assets — bringing the dimension that photography and static design can't touch.</p>
+      </div>
+      <div class="sb-visual" data-div="motion">
+        <span class="sb-visual-num">06</span>
+        <svg class="sb-visual-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+      </div>
+    </div>
+    </div>
+
+    <div class="studio-cards-section">
+      <div class="studio-cards-grid" style="max-width:var(--container);margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem);">
+
+        <div class="svc-conv-card motion-card" data-studio="motion" data-card="motion-graphics">
+        <div class="scc-card-glow"></div>
+          <div class="scc-accent-bar motion-bar"></div>
+          <div class="scc-icon motion-icon-bg">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+          <div class="scc-body">
+            <h3>Motion Graphics & Visual Effects</h3>
+            <p class="scc-hook">"Motion is the language the eye can't ignore."</p>
+            <div class="scc-more" id="svc-more-20"><div>
+              <p class="scc-desc">Animated titles, lower thirds, logo reveals, kinetic typography, and social motion graphics — designed to match your brand identity and built for broadcast, streaming, and social media deployment.</p>
+              <ul class="scc-outcomes">
+              <li>Broadcast-ready motion graphics</li>
+              <li>Animated logo reveals</li>
+              <li>Kinetic typography sequences</li>
+              <li>Social media animated posts</li>
+            </ul>
+            </div></div>
+            <button class="scc-view-btn" type="button" data-target="svc-more-20">
+              <span class="scc-view-label">View more</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="scc-footer">
+            <p class="scc-for">For: Brands, Media Houses, Event Producers, Content Creators</p>
+            <button class="scc-expand-btn motion-expand" onclick="openOverlay('motion','motion-graphics')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+
+        <div class="svc-conv-card motion-card" data-studio="motion" data-card="2d-animation">
+        <div class="scc-card-glow"></div>
+          <div class="scc-accent-bar motion-bar"></div>
+          <div class="scc-icon motion-icon-bg">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M8 12h8M12 8v8"/></svg>
+          </div>
+          <div class="scc-body">
+            <h3>2D Animation & Explainer Videos</h3>
+            <p class="scc-hook">"Complex ideas become simple stories with animation."</p>
+            <div class="scc-more" id="svc-more-21"><div>
+              <p class="scc-desc">2D character animation, explainer video production, infographic animations, and educational animated content — making complex ideas visually digestible and emotionally engaging for any audience.</p>
+              <ul class="scc-outcomes">
+              <li>Explainer & product demo videos</li>
+              <li>2D character animation</li>
+              <li>Animated infographics</li>
+              <li>Educational & training content</li>
+            </ul>
+            </div></div>
+            <button class="scc-view-btn" type="button" data-target="svc-more-21">
+              <span class="scc-view-label">View more</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="scc-footer">
+            <p class="scc-for">For: Tech, Healthcare, Finance, Education, NGOs</p>
+            <button class="scc-expand-btn motion-expand" onclick="openOverlay('motion','2d-animation')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+
+        <div class="svc-conv-card motion-card" data-studio="motion" data-card="3d">
+        <div class="scc-card-glow"></div>
+          <div class="scc-accent-bar motion-bar"></div>
+          <div class="scc-icon motion-icon-bg">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <div class="scc-body">
+            <h3>3D Modelling & Visualisation</h3>
+            <p class="scc-hook">"See it before it exists. Sell it before it's built."</p>
+            <div class="scc-more" id="svc-more-22"><div>
+              <p class="scc-desc">3D product visualisation, architectural renders, brand asset modelling, and environmental animations — giving clients and customers an immersive preview of the final product before production begins.</p>
+              <ul class="scc-outcomes">
+              <li>3D product rendering & animation</li>
+              <li>Architectural & interior visualisation</li>
+              <li>Brand asset 3D modelling</li>
+              <li>Animated promotional 3D content</li>
+            </ul>
+            </div></div>
+            <button class="scc-view-btn" type="button" data-target="svc-more-22">
+              <span class="scc-view-label">View more</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="scc-footer">
+            <p class="scc-for">For: Real Estate, Manufacturers, Architects, Product Brands</p>
+            <button class="scc-expand-btn motion-expand" onclick="openOverlay('motion','3d')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSE CTA -->
+  <section class="services-close-cta">
+    <div class="scc-close-prism">
+      <svg viewBox="0 0 80 92" fill="none">
+        <polygon points="40,4 76,28 76,64 40,88 4,64 4,28" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" fill="none"/>
+        <line x1="40" y1="4"  x2="4"  y2="28" stroke="#F97316" stroke-width="1.5"/>
+        <line x1="4"  y1="28" x2="4"  y2="64" stroke="#14B8A6" stroke-width="1.5"/>
+        <line x1="4"  y1="64" x2="40" y2="88" stroke="#F5B400" stroke-width="1.5"/>
+        <line x1="40" y1="88" x2="76" y2="64" stroke="#8B5CF6" stroke-width="1.5"/>
+        <line x1="76" y1="64" x2="76" y2="28" stroke="#3B82F6" stroke-width="1.5"/>
+        <line x1="76" y1="28" x2="40" y2="4"  stroke="#EF4444" stroke-width="1.5"/>
+      </svg>
+    </div>
+    <div class="scc-close-inner">
+      <h2>Still figuring out what you need?</h2>
+      <p>Use our Project Builder — tell us your goal in 3 steps and we'll tell you exactly which studios to deploy. No jargon. No commitment.</p>
+      <div class="scc-close-btns">
+        <a href="contact.html" class="btn-primary">Build Your Brief</a>
+        <a href="https://wa.me/2347053815985?text=Hi%20Spectra%2C%20I%20need%20help%20figuring%20out%20which%20service%20I%20need." target="_blank" rel="noopener" class="btn-ghost">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;margin-right:6px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Us Instead
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <svg viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="16,2 30,10 30,26 16,34 2,26 2,10" stroke="white" stroke-width="1" fill="none"/>
+            <line x1="16" y1="2" x2="2" y2="10" stroke="#F97316" stroke-width="1.5"/>
+            <line x1="2" y1="10" x2="2" y2="26" stroke="#14B8A6" stroke-width="1.5"/>
+            <line x1="2" y1="26" x2="16" y2="34" stroke="#F5B400" stroke-width="1.5"/>
+            <line x1="16" y1="34" x2="30" y2="26" stroke="#8B5CF6" stroke-width="1.5"/>
+            <line x1="30" y1="26" x2="30" y2="10" stroke="#3B82F6" stroke-width="1.5"/>
+            <line x1="30" y1="10" x2="16" y2="2" stroke="#EF4444" stroke-width="1.5"/>
+          </svg>
+          <span>SPECTRA<em>GROUP</em></span>
+        </div>
+        <p>Africa's Creator Development & Brand Production Studio.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 10v7M7 7v.01M11 17v-3.5a2.5 2.5 0 0 1 5 0V17M11 10v7"/></svg></a>
+          <a href="#" aria-label="X / Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L2.5 2.25h6.93l4.254 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" stroke="none" fill="white"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>The Group</h5>
+          <a href="services.html#media">Spectra Media</a>
+          <a href="services.html#entertainment">Spectra Entertainment</a>
+          <a href="services.html#talent">Talent Management</a>
+          <a href="services.html#business">Business Management</a>
+          <a href="services.html#web">Web, App & AI</a>
+          <a href="services.html#motion">Motion & Animation</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="index.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+          <a href="contact.html">Start a Project</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="mailto:hello@spectragroup.ng">hello@spectragroup.ng</a>
+          <a href="tel:+2347053815985">+234 705 381 5985</a>
+          <a href="https://wa.me/2347053815985" target="_blank" rel="noopener">WhatsApp Us</a>
+          <span>Abuja, Nigeria</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Spectra Group. All rights reserved.</span>
+      <span>Engineered by E³ Technologies</span>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/2347053815985?text=Hi%20Spectra%2C%20I%27d%20like%20to%20ask%20about%20your%20studios." target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="wa-tooltip">Chat with us</span>
+  </a>
+
+  <script src="particles.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>

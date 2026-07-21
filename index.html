@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Spectra Group — Africa's Creator Development & Brand Production Studio</title>
+  <meta name="description" content="Spectra Group discovers, develops, and manages Africa's most compelling creators while producing premium campaigns for brands that want to move markets. Based in Abuja." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="dns-prefetch" href="https://images.unsplash.com" />
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=1200&q=75" fetchpriority="high" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" /></noscript>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="prism-loader">
+      <svg viewBox="0 0 80 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon class="prism-face face-1" points="40,4 76,28 76,64 40,88 4,64 4,28" stroke="white" stroke-width="1.5" fill="none"/>
+        <line class="prism-line line-1" x1="40" y1="4" x2="4" y2="28" stroke="#F97316" stroke-width="1.5"/>
+        <line class="prism-line line-2" x1="4" y1="28" x2="4" y2="64" stroke="#14B8A6" stroke-width="1.5"/>
+        <line class="prism-line line-3" x1="4" y1="64" x2="40" y2="88" stroke="#F5B400" stroke-width="1.5"/>
+        <line class="prism-line line-4" x1="40" y1="88" x2="76" y2="64" stroke="#8B5CF6" stroke-width="1.5"/>
+        <line class="prism-line line-5" x1="76" y1="64" x2="76" y2="28" stroke="#3B82F6" stroke-width="1.5"/>
+        <line class="prism-line line-6" x1="76" y1="28" x2="40" y2="4" stroke="#EF4444" stroke-width="1.5"/>
+      </svg>
+      <span class="prism-wordmark">SPECTRA</span>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-mark">
+          <img src="images/logo.webp" alt="Spectra Group" class="logo-img"
+               onerror="this.closest('.logo-mark').classList.add('logo-fallback')">
+          <svg class="logo-fallback-svg" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <polygon points="16,2 30,10 30,26 16,34 2,26 2,10" stroke="white" stroke-width="1.2" fill="none"/>
+            <line x1="16" y1="2" x2="2" y2="10" style="stroke:var(--talent);stroke-width:1.5px"/>
+            <line x1="2" y1="10" x2="2" y2="26" style="stroke:var(--media);stroke-width:1.5px"/>
+            <line x1="2" y1="26" x2="16" y2="34" style="stroke:var(--events);stroke-width:1.5px"/>
+            <line x1="16" y1="34" x2="30" y2="26" style="stroke:var(--web);stroke-width:1.5px"/>
+            <line x1="30" y1="26" x2="30" y2="10" style="stroke:var(--motion);stroke-width:1.5px"/>
+            <line x1="30" y1="10" x2="16" y2="2" style="stroke:var(--business);stroke-width:1.5px"/>
+          </svg>
+        </div>
+        <span>SPECTRA<em>GROUP</em></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Start a Project</a>
+      </div>
+      <a href="contact.html" class="nav-cta">Start a Project</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Start a Project</a>
+    </div>
+  </nav>
+
+  <!-- PRISM PROGRESS INDICATOR -->
+  <div class="prism-progress" id="prismProgress">
+    <div class="pp-prism">
+      <svg viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="16,2 30,10 30,26 16,34 2,26 2,10" stroke="rgba(255,255,255,0.2)" stroke-width="1" fill="none"/>
+        <line class="pp-line" data-div="media"         x1="16" y1="2"  x2="2"  y2="10" stroke="#F97316" stroke-width="1.5" opacity="0.3"/>
+        <line class="pp-line" data-div="media"         x1="2"  y1="10" x2="2"  y2="26" stroke="#F97316" stroke-width="1.5" opacity="0.3"/>
+        <line class="pp-line" data-div="entertainment" x1="2"  y1="26" x2="16" y2="34" stroke="#F5B400" stroke-width="1.5" opacity="0.3"/>
+        <line class="pp-line" data-div="talent"        x1="16" y1="34" x2="30" y2="26" stroke="#3B82F6" stroke-width="1.5" opacity="0.3"/>
+        <line class="pp-line" data-div="business"      x1="30" y1="26" x2="30" y2="10" stroke="#8B5CF6" stroke-width="1.5" opacity="0.3"/>
+        <line class="pp-line" data-div="web"           x1="30" y1="10" x2="16" y2="2"  stroke="#14B8A6" stroke-width="1.5" opacity="0.3"/>
+      </svg>
+    </div>
+    <div class="pp-labels">
+      <span data-div="media">Media</span>
+      <span data-div="entertainment">Entertainment</span>
+      <span data-div="talent">Talent</span>
+      <span data-div="business">Business</span>
+      <span data-div="web">Web & AI</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SECTION 1: HERO                        -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-slides">
+      <div class="hero-slide hero-color-talent active"  data-index="0"></div>
+      <div class="hero-slide hero-color-media"           data-index="1"></div>
+      <div class="hero-slide hero-color-events"          data-index="2"></div>
+      <div class="hero-slide hero-color-web"             data-index="3"></div>
+      <div class="hero-slide hero-color-motion"          data-index="4"></div>
+      <div class="hero-slide hero-color-business"        data-index="5"></div>
+    </div>
+    <canvas data-particles data-sync="hero" data-density="1.3" aria-hidden="true"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Spectra Group — Abuja, Nigeria</div>
+      <h1 class="hero-headline" id="heroHeadline">
+        We're Building Africa's<br/>
+        Next Generation of Brands,<br/>
+        Creators, and Leaders.
+      </h1>
+      <p class="hero-sub" id="heroSub">Every legend starts unmanaged. We find them first — and give them the structure to last.</p>
+      <div class="hero-ctas">
+        <a href="#dd-talent" class="btn-primary" id="heroPrimaryCta">Meet Our Talent</a>
+        <a href="contact.html" class="btn-ghost">Start a Project</a>
+      </div>
+    </div>
+    <div class="hero-slide-dots">
+      <button class="dot active" data-index="0" style="--dot-c:var(--talent)" aria-label="Talent"></button>
+      <button class="dot" data-index="1" style="--dot-c:var(--media)" aria-label="Media"></button>
+      <button class="dot" data-index="2" style="--dot-c:var(--events)" aria-label="Events"></button>
+      <button class="dot" data-index="3" style="--dot-c:var(--web)" aria-label="Web"></button>
+      <button class="dot" data-index="4" style="--dot-c:var(--motion)" aria-label="Motion"></button>
+      <button class="dot" data-index="5" style="--dot-c:var(--business)" aria-label="Business"></button>
+    </div>
+    <div class="hero-scroll-cue"><div class="scroll-line"></div></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SECTION 2: WHO WE ARE                  -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="who-we-are reveal-section" data-div="none">
+    <div class="container">
+      <div class="spectrum-line"></div>
+      <p class="wwa-label">WHO WE ARE</p>
+      <h2 class="wwa-statement">Africa's creator economy is exploding.<br/><em>We built the infrastructure to lead it.</em></h2>
+      <p class="wwa-body">Spectra Group is a creator development and brand production company built on one conviction — that African creativity is world-class and chronically underserved.</p>
+      <div class="read-more-block" id="wwa-more"><div>
+        <p class="wwa-body">We discover raw talent, develop it into market-ready brands, and connect creators with the audiences and businesses that need them. Every shoot, every strategy, every event, and every line of code we build serves that single mission.</p>
+      </div></div>
+      <button class="read-more-btn" type="button" data-target="wwa-more" style="margin-left:auto;margin-right:auto;">
+        <span class="read-more-label">Read more</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="wwa-pillars">
+        <div class="wwa-pillar">
+          <span class="wwa-pillar-num">01</span>
+          <h4>Discover</h4>
+          <p>We scout raw, unmanaged talent across Africa's creator economy before the market catches up.</p>
+        </div>
+        <div class="wwa-pillar">
+          <span class="wwa-pillar-num">02</span>
+          <h4>Develop</h4>
+          <p>Brand identity, content strategy, and business structure — we build the machine behind the person.</p>
+        </div>
+        <div class="wwa-pillar">
+          <span class="wwa-pillar-num">03</span>
+          <h4>Deploy</h4>
+          <p>Campaigns, events, and platforms that put developed talent in front of the audiences that convert.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SECTION 2.5: FOUNDER / CEO              -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="founder reveal-section" data-div="none">
+    <div class="container">
+      <div class="founder-card">
+        <div class="founder-visual" data-div="business">
+          <img src="images/about.webp" alt="Samuel Godwin Onjewu — Founder & Group CEO, Spectra Group" class="founder-photo" loading="lazy"
+               onerror="this.style.display='none'; this.closest('.founder-visual').classList.add('logo-fallback'); this.closest('.founder-visual').insertAdjacentHTML('beforeend','<div class=&quot;dd-visual-grid&quot;></div><div class=&quot;dd-visual-glow&quot;></div><span class=&quot;founder-monogram&quot;>SGO</span>')">
+        </div>
+        <div class="founder-content">
+          <span class="section-label">LEADERSHIP</span>
+          <h2 class="founder-name">Samuel Godwin Onjewu</h2>
+          <span class="founder-title">Founder &amp; Group CEO, Spectra Group</span>
+
+          <p class="founder-lede">Samuel Godwin Onjewu is a Nigerian entrepreneur, creative strategist, media professional, and Founder &amp; Group CEO of Spectra Group. Driven by a passion for innovation, leadership, and impact, he believes that talent alone is not enough — people need the right strategy, visibility, and opportunities to thrive.</p>
+
+          <div class="read-more-block" id="founder-more"><div>
+            <p>Through Spectra, he is building a platform that bridges creativity, business, technology, education, and community to empower the next generation of founders, professionals, creators, and entrepreneurs across Africa.</p>
+            <p>His vision is to build institutions that outlive him, create opportunities for thousands of young people, and demonstrate that integrity, excellence, and bold thinking can transform lives, industries, and communities.</p>
+          </div></div>
+          <button class="read-more-btn" type="button" data-target="founder-more">
+            <span class="read-more-label">View more</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+
+          <div class="founder-contact">
+            <a href="mailto:Samuelonjewu01@gmail.com" class="founder-contact-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg>
+              Samuelonjewu01@gmail.com
+            </a>
+            <a href="https://wa.me/2347053815985" target="_blank" rel="noopener" class="founder-contact-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              +234 705 381 5985
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SECTION 3: CREATOR DEVELOPMENT         -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="creator-dev reveal-section" data-div="none">
+    <canvas data-particles data-mode="rain" data-density="0.8" aria-hidden="true"></canvas>
+    <div class="container">
+      <div class="cd-intro">
+        <div class="spectrum-line"></div>
+        <p class="section-label">OUR FRAMEWORK</p>
+        <h2>We don't just represent talent.<br/><em>We build entire careers.</em></h2>
+        <p>Most African creators have the raw material for global relevance. What they lack is structure, strategy, and the right production ecosystem around them. Spectra fills that gap — from first discovery to sustained influence.</p>
+      </div>
+      <div class="cd-pillars">
+        <div class="cd-pillar">
+          <div class="cd-pillar-number">01</div>
+          <div class="cd-pillar-word">Discover<span></span></div>
+          <p>We identify extraordinary African creators — photographers, directors, musicians, stylists, influencers — before the world catches on. We look for potential, not just polish. The uncut gem, not the finished stone.</p>
+          <div class="cd-pillar-accent"></div>
+        </div>
+        <div class="cd-pillar">
+          <div class="cd-pillar-number">02</div>
+          <div class="cd-pillar-word">Develop<span></span></div>
+          <p>We equip talent with everything a modern creative brand needs: visual identity, content strategy, production quality, business fundamentals, and the strategic positioning that turns ability into authority.</p>
+          <div class="cd-pillar-accent"></div>
+        </div>
+        <div class="cd-pillar">
+          <div class="cd-pillar-number">03</div>
+          <div class="cd-pillar-word">Deploy<span></span></div>
+          <p>We connect creators to brands, bookings, audiences, and revenue streams. Talent without infrastructure eventually burns out. We are the infrastructure — making sure that extraordinary work reaches extraordinary audiences.</p>
+          <div class="cd-pillar-accent"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SECTION 4: THE PROBLEM + TRANSFORMATION -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="problem-transform reveal-section" data-div="none">
+    <div class="pt-split">
+      <div class="pt-problem">
+        <p class="section-label">THE REALITY</p>
+        <h2>Most brands and<br/>creators are invisible.</h2>
+        <ul class="problem-list">
+          <li>
+            <span class="pl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span>
+            <span>They look ordinary when their talent deserves to stand out.</span>
+          </li>
+          <li>
+            <span class="pl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span>
+            <span>They create inconsistently and disappear from people's memory.</span>
+          </li>
+          <li>
+            <span class="pl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span>
+            <span>They blend into a market overflowing with noise and sameness.</span>
+          </li>
+          <li>
+            <span class="pl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span>
+            <span>Brands don't invest because creators don't have a system behind them.</span>
+          </li>
+        </ul>
+        <p class="problem-close">That's where we come in.</p>
+      </div>
+
+      <div class="pt-divider">
+        <div class="pt-divider-line"></div>
+        <div class="pt-divider-prism">
+          <svg viewBox="0 0 32 36" fill="none">
+            <polygon points="16,2 30,10 30,26 16,34 2,26 2,10" stroke="rgba(255,255,255,0.15)" stroke-width="1" fill="none"/>
+            <line x1="16" y1="2" x2="2" y2="10" stroke="#F97316" stroke-width="1.5"/>
+            <line x1="2" y1="10" x2="2" y2="26" stroke="#14B8A6" stroke-width="1.5"/>
+            <line x1="2" y1="26" x2="16" y2="34" stroke="#F5B400" stroke-width="1.5"/>
+            <line x1="16" y1="34" x2="30" y2="26" stroke="#8B5CF6" stroke-width="1.5"/>
+            <line x1="30" y1="26" x2="30" y2="10" stroke="#3B82F6" stroke-width="1.5"/>
+            <line x1="30" y1="10" x2="16" y2="2" stroke="#EF4444" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="pt-divider-line"></div>
+      </div>
+
+      <div class="pt-transformation">
+        <p class="section-label">THE SPECTRA EFFECT</p>
+        <h2>We turn<br/>everything around.</h2>
+        <div class="transform-rows">
+          <div class="transform-row">
+            <span class="tr-before">Raw Talent</span>
+            <span class="tr-arrow"><svg viewBox="0 0 40 16" fill="none"><path d="M0 8h36m0 0-6-6m6 6-6 6" stroke="url(#tg1)" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="tg1" x1="0" y1="8" x2="40" y2="8"><stop stop-color="#F97316"/><stop offset="1" stop-color="#14B8A6"/></linearGradient></defs></svg></span>
+            <span class="tr-after">Market Brand</span>
+          </div>
+          <div class="transform-row">
+            <span class="tr-before">Businesses</span>
+            <span class="tr-arrow"><svg viewBox="0 0 40 16" fill="none"><path d="M0 8h36m0 0-6-6m6 6-6 6" stroke="url(#tg2)" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="tg2" x1="0" y1="8" x2="40" y2="8"><stop stop-color="#F5B400"/><stop offset="1" stop-color="#F97316"/></linearGradient></defs></svg></span>
+            <span class="tr-after">Household Names</span>
+          </div>
+          <div class="transform-row">
+            <span class="tr-before">Followers</span>
+            <span class="tr-arrow"><svg viewBox="0 0 40 16" fill="none"><path d="M0 8h36m0 0-6-6m6 6-6 6" stroke="url(#tg3)" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="tg3" x1="0" y1="8" x2="40" y2="8"><stop stop-color="#3B82F6"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient></defs></svg></span>
+            <span class="tr-after">Communities</span>
+          </div>
+          <div class="transform-row">
+            <span class="tr-before">Moments</span>
+            <span class="tr-arrow"><svg viewBox="0 0 40 16" fill="none"><path d="M0 8h36m0 0-6-6m6 6-6 6" stroke="url(#tg4)" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="tg4" x1="0" y1="8" x2="40" y2="8"><stop stop-color="#8B5CF6"/><stop offset="1" stop-color="#EF4444"/></linearGradient></defs></svg></span>
+            <span class="tr-after">Legacies</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SECTION 5: ECOSYSTEM — 5 TILES         -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="ecosystem reveal-section" id="ecosystem" data-div="none">
+    <canvas data-particles data-mode="flow" data-direction="right" data-density="0.8" aria-hidden="true"></canvas>
+    <div class="container">
+      <p class="section-label">THE GROUP</p>
+      <h2 class="section-headline">Five divisions.<br/>One mission. Infinite outcomes.</h2>
+    </div>
+    <div class="eco-grid eco-grid-5">
+
+      <!-- TILE 1: MEDIA -->
+      <div class="eco-tile" data-div="media">
+        <div class="eco-tile-overlay"></div>
+        <div class="eco-tile-content">
+          <div class="eco-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2m-3.5-7.5-1.5 1.5M5.5 18.5l1.5-1.5m0-13 1.5 1.5M18.5 18.5l-1.5-1.5"/></svg></div>
+          <div class="eco-tag">01</div>
+          <h3>Spectra<br/>Media</h3>
+          <p>Visuals that stop the scroll.</p>
+          <a href="services.html#media" class="eco-cta">Explore Media <span>→</span></a>
+        </div>
+      </div>
+
+      <!-- TILE 2: ENTERTAINMENT -->
+      <div class="eco-tile" data-div="entertainment">
+        <div class="eco-tile-overlay"></div>
+        <div class="eco-tile-content">
+          <div class="eco-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+          <div class="eco-tag">02</div>
+          <h3>Spectra<br/>Entertainment</h3>
+          <p>Events that become legends.</p>
+          <a href="services.html#entertainment" class="eco-cta">Enter Arena <span>→</span></a>
+        </div>
+      </div>
+
+      <!-- TILE 3: TALENT -->
+      <div class="eco-tile" data-div="talent">
+        <div class="eco-tile-overlay"></div>
+        <div class="eco-tile-content">
+          <div class="eco-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <div class="eco-tag">03</div>
+          <h3>Spectra<br/>Talent</h3>
+          <p>Creators developed into brands.</p>
+          <a href="services.html#talent" class="eco-cta">Join Roster <span>→</span></a>
+        </div>
+      </div>
+
+      <!-- TILE 4: BUSINESS -->
+      <div class="eco-tile" data-div="business">
+        <div class="eco-tile-overlay"></div>
+        <div class="eco-tile-content">
+          <div class="eco-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+          <div class="eco-tag">04</div>
+          <h3>Spectra<br/>Business</h3>
+          <p>Brands built to lead markets.</p>
+          <a href="services.html#business" class="eco-cta">Start Growing <span>→</span></a>
+        </div>
+      </div>
+
+      <!-- TILE 5: WEB & AI -->
+      <div class="eco-tile" data-div="web">
+        <div class="eco-tile-overlay"></div>
+        <div class="eco-tile-content">
+          <div class="eco-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/><path d="m9 9 2 2 4-4"/></svg></div>
+          <div class="eco-tag">05</div>
+          <h3>Spectra<br/>Web & AI</h3>
+          <p>Digital products that grow businesses.</p>
+          <a href="services.html#web" class="eco-cta">See Digital <span>→</span></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SECTION 6: DEEP DIVES                   -->
+  <!-- ═══════════════════════════════════════ -->
+
+  <!-- 6.1 MEDIA -->
+  <section class="deepdive reveal-section" data-div="media" id="dd-media">
+    <div class="dd-image-side dd-visual" data-div="media">
+      <div class="dd-visual-grid"></div>
+      <div class="dd-visual-glow"></div>
+      <canvas data-particles data-mode="flow" data-direction="left" data-density="0.6" aria-hidden="true"></canvas>
+      <svg class="dd-visual-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true"><circle cx="12" cy="13.5" r="4.2"/><path d="M4 8.5h3.2l1.8-2.5h6l1.8 2.5H20v11H4z"/></svg>
+      <span class="dd-visual-num">01</span>
+      <span class="dd-visual-label">Spectra Media — cinematic brand photography</span>
+    </div>
+    <div class="dd-text-side">
+      <span class="dd-division-tag media-tag">Spectra Media</span>
+      <h2>Your brand deserves to be <em>seen</em>, not glanced at.</h2>
+      <p>From brand photography that shapes perception to multi-camera productions that command rooms — we produce visuals that earn the second look, the third, and the sale.</p>
+      <ul class="dd-services">
+        <li><span class="dot-accent media-dot"></span>Photography & Videography</li>
+        <li><span class="dot-accent media-dot"></span>Graphics & Visual Identity</li>
+        <li><span class="dot-accent media-dot"></span>Content Creation & Strategy</li>
+        <li><span class="dot-accent media-dot"></span>Livestream Production</li>
+      </ul>
+      <a href="services.html#media" class="btn-accent media-btn">Discover Creative Media →</a>
+    </div>
+  </section>
+
+  <!-- 6.2 ENTERTAINMENT -->
+  <section class="deepdive deepdive-flip reveal-section" data-div="entertainment" id="dd-entertainment">
+    <div class="dd-image-side dd-visual" data-div="entertainment">
+      <div class="dd-visual-grid"></div>
+      <div class="dd-visual-glow"></div>
+      <canvas data-particles data-mode="flow" data-direction="left" data-density="0.6" aria-hidden="true"></canvas>
+      <svg class="dd-visual-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true"><path d="M12 2.5a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0v-6a3 3 0 0 0-3-3z"/><path d="M19 10.5v1a7 7 0 0 1-14 0v-1M12 18.5v3m-4 0h8"/></svg>
+      <span class="dd-visual-num">02</span>
+      <span class="dd-visual-label">Spectra Entertainment — event production</span>
+    </div>
+    <div class="dd-text-side">
+      <span class="dd-division-tag events-tag">Spectra Entertainment</span>
+      <h2>We don't just plan events. <em>We engineer atmosphere.</em></h2>
+      <p>From intimate brand activations to headline concerts and corporate galas — we handle the invisible logistics and the visible spectacle so your guests remember the feeling long after they leave.</p>
+      <ul class="dd-services">
+        <li><span class="dot-accent events-dot"></span>Event Planning & Production</li>
+        <li><span class="dot-accent events-dot"></span>Stage Design & Technical Direction</li>
+        <li><span class="dot-accent events-dot"></span>Artist Booking & Entertainment</li>
+        <li><span class="dot-accent events-dot"></span>Corporate & Private Experiences</li>
+      </ul>
+      <a href="services.html#entertainment" class="btn-accent events-btn">Enter the Experience Arena →</a>
+    </div>
+  </section>
+
+  <!-- 6.3 TALENT MANAGEMENT -->
+  <section class="deepdive reveal-section" data-div="talent" id="dd-talent">
+    <div class="dd-image-side dd-visual" data-div="talent">
+      <div class="dd-visual-grid"></div>
+      <div class="dd-visual-glow"></div>
+      <canvas data-particles data-mode="flow" data-direction="left" data-density="0.6" aria-hidden="true"></canvas>
+      <svg class="dd-visual-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true"><path d="M12 2.5l3.09 6.26L22 9.77l-5 4.87L18.18 22 12 18.5 5.82 22 7 14.64l-5-4.87 6.91-1.01z"/></svg>
+      <span class="dd-visual-num">03</span>
+      <span class="dd-visual-label">Spectra Talent Management — creator development</span>
+    </div>
+    <div class="dd-text-side">
+      <span class="dd-division-tag" style="color:var(--talent);border-color:var(--talent);background:var(--talent-glow);">Spectra Talent Management</span>
+      <h2>Your talent is the asset. <em>We make sure it gets everything it deserves.</em></h2>
+      <p>We represent artists, creators, athletes, and public personalities — managing careers, negotiating deals, and building the personal brand infrastructure that turns ability into lasting influence.</p>
+      <div class="dd-sub-blocks">
+        <div class="dd-sub">
+          <h4 style="color:var(--talent);border-color:rgba(201,168,76,0.2);">Representation</h4>
+          <ul class="dd-services">
+            <li><span class="dot-accent" style="background:var(--talent)"></span>Talent Representation</li>
+            <li><span class="dot-accent" style="background:var(--talent)"></span>Career Development</li>
+            <li><span class="dot-accent" style="background:var(--talent)"></span>Crisis & Reputation Management</li>
+          </ul>
+        </div>
+        <div class="dd-sub">
+          <h4 style="color:rgba(201,168,76,0.7);border-color:rgba(201,168,76,0.1);">Brand Building</h4>
+          <ul class="dd-services">
+            <li><span class="dot-accent" style="background:var(--talent)"></span>Personal Brand Strategy</li>
+            <li><span class="dot-accent" style="background:var(--talent)"></span>Brand Deals & Partnerships</li>
+            <li><span class="dot-accent" style="background:var(--talent)"></span>Media Positioning</li>
+          </ul>
+        </div>
+      </div>
+      <a href="services.html#talent" class="btn-accent" style="color:var(--talent);border-color:var(--talent);" onmouseover="this.style.background='var(--talent-glow)'" onmouseout="this.style.background=''">Join Our Talent Roster →</a>
+    </div>
+  </section>
+
+  <!-- 6.4 BUSINESS MANAGEMENT -->
+  <section class="deepdive deepdive-flip reveal-section" data-div="business" id="dd-business">
+    <div class="dd-image-side dd-visual" data-div="business">
+      <div class="dd-visual-grid"></div>
+      <div class="dd-visual-glow"></div>
+      <canvas data-particles data-mode="flow" data-direction="left" data-density="0.6" aria-hidden="true"></canvas>
+      <svg class="dd-visual-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l3.5-4 3 3L19 7"/></svg>
+      <span class="dd-visual-num">04</span>
+      <span class="dd-visual-label">Spectra Business Management — strategy and growth</span>
+    </div>
+    <div class="dd-text-side">
+      <span class="dd-division-tag business-tag">Spectra Business Management</span>
+      <h2>Before the market sees you, <em>we've already built your position.</em></h2>
+      <p>Strategy isn't a document — it's the invisible architecture that determines whether your brand earns attention or begs for it. We build what's invisible so results show up where it counts.</p>
+      <div class="dd-sub-blocks">
+        <div class="dd-sub business-sub">
+          <h4>Brand Strategy</h4>
+          <ul class="dd-services">
+            <li><span class="dot-accent business-dot"></span>Brand Identity & Positioning</li>
+            <li><span class="dot-accent business-dot"></span>Market Optimization</li>
+            <li><span class="dot-accent business-dot"></span>Business Consulting</li>
+          </ul>
+        </div>
+        <div class="dd-sub">
+          <h4 style="color:rgba(184,134,11,0.7);border-color:rgba(184,134,11,0.1);">PR & Marketing</h4>
+          <ul class="dd-services">
+            <li><span class="dot-accent business-dot"></span>Public Relations</li>
+            <li><span class="dot-accent business-dot"></span>Marketing Strategy</li>
+            <li><span class="dot-accent business-dot"></span>Campaign Development</li>
+          </ul>
+        </div>
+      </div>
+      <a href="services.html#business" class="btn-accent business-btn">Start Growing →</a>
+    </div>
+  </section>
+
+  <!-- 6.5 WEB & AI -->
+  <section class="deepdive reveal-section" data-div="web" id="dd-web">
+    <div class="dd-image-side dd-visual" data-div="web">
+      <div class="dd-visual-grid"></div>
+      <div class="dd-visual-glow"></div>
+      <canvas data-particles data-mode="flow" data-direction="left" data-density="0.6" aria-hidden="true"></canvas>
+      <svg class="dd-visual-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true"><polyline points="8 6 3 12 8 18"/><polyline points="16 6 21 12 16 18"/></svg>
+      <span class="dd-visual-num">05</span>
+      <span class="dd-visual-label">Spectra Web and AI solutions</span>
+      <div class="dd-device-accent">
+        <div class="device-pill">
+          <span class="device-dot"></span>
+          <span>Live</span>
+          <span class="device-stat">+247% Traffic</span>
+        </div>
+      </div>
+    </div>
+    <div class="dd-text-side">
+      <span class="dd-division-tag web-tag">Spectra Web, App & AI</span>
+      <h2>Digital products that don't just look good — <em>they grow businesses.</em></h2>
+      <p>Websites that convert. Applications that automate. AI that thinks ahead. We engineer digital tools built around one measure of success: do they move your business forward?</p>
+      <div class="dd-sub-blocks">
+        <div class="dd-sub web-sub">
+          <h4>Web & App</h4>
+          <ul class="dd-services">
+            <li><span class="dot-accent web-dot"></span>Business Websites & E-Commerce</li>
+            <li><span class="dot-accent web-dot"></span>Custom Web Applications</li>
+            <li><span class="dot-accent web-dot"></span>Mobile Apps (iOS & Android)</li>
+          </ul>
+        </div>
+        <div class="dd-sub ai-sub">
+          <h4>AI Integration</h4>
+          <ul class="dd-services">
+            <li><span class="dot-accent ai-dot"></span>Intelligent Chatbots</li>
+            <li><span class="dot-accent ai-dot"></span>Business Automation</li>
+            <li><span class="dot-accent ai-dot"></span>Smart Analytics</li>
+          </ul>
+        </div>
+      </div>
+      <a href="services.html#web" class="btn-accent web-btn">Explore Digital Solutions →</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SECTION 7: INDUSTRIES                  -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="industries reveal-section" data-div="none">
+    <div class="container">
+      <p class="section-label">WHO WE SERVE</p>
+      <h2 class="section-headline">We don't do everything.<br/><em>We understand your industry.</em></h2>
+    </div>
+    <div class="industries-grid">
+      <div class="industry-card">
+        <div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.57a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.57a2 2 0 0 0-1.34-2.23z"/></svg></div>
+        <h4>Fashion & Luxury</h4>
+        <p>Editorial shoots, brand campaigns, runway coverage, and identity systems for fashion-forward Nigerian and African brands.</p>
+      </div>
+      <div class="industry-card">
+        <div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-4 0v2M8 7V5a2 2 0 0 1 4 0v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg></div>
+        <h4>Corporate & Business</h4>
+        <p>Conferences, brand strategy, corporate photography, PR, and digital infrastructure for growing companies across Nigeria.</p>
+      </div>
+      <div class="industry-card">
+        <div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
+        <h4>Music & Entertainment</h4>
+        <p>Artist visuals, music video production, talent management, event production, and concert coverage for Africa's next generation of stars.</p>
+      </div>
+      <div class="industry-card">
+        <div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <h4>Real Estate</h4>
+        <p>Architectural photography, property videos, digital marketing, and branded websites for developers and agents across Abuja and Lagos.</p>
+      </div>
+      <div class="industry-card">
+        <div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 11H7a4 4 0 0 0 0 8h10a4 4 0 0 0 0-8z"/><path d="M12 11V3"/><path d="M8 7l4-4 4 4"/></svg></div>
+        <h4>Restaurants & Food</h4>
+        <p>Cinematic food photography, social content, menu design, brand identity, and hospitality marketing for Nigeria's food industry.</p>
+      </div>
+      <div class="industry-card">
+        <div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <h4>Content Creators</h4>
+        <p>End-to-end creator development, personal branding, brand partnership management, and production support for Nigeria's digital creators.</p>
+      </div>
+      <div class="industry-card">
+        <div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
+        <h4>Churches & Faith Orgs</h4>
+        <p>Livestream production, event coverage, brand identity, social content, and digital platforms for faith communities across Nigeria.</p>
+      </div>
+      <div class="industry-card">
+        <div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+        <h4>Startups & SMEs</h4>
+        <p>End-to-end brand architecture, digital products, launch strategy, and growth systems for Nigeria's emerging businesses and entrepreneurs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SECTION 8: PORTFOLIO TEASER            -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="portfolio-teaser reveal-section" data-div="none">
+    <canvas data-particles data-mode="flow" data-direction="right" data-density="0.7" aria-hidden="true"></canvas>
+    <div class="container">
+      <p class="section-label">PORTFOLIO</p>
+      <h2 class="section-headline">Work that doesn't just show. <em>It stays.</em></h2>
+    </div>
+    <div class="pt-gallery">
+      <div class="pt-card large" style="background-image:url('https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=900&q=85')">
+        <div class="pt-card-overlay">
+          <span class="pt-tag media-tag">Creative Media</span>
+          <h4>Luxury Fashion Campaign</h4>
+          <p>Abuja, Nigeria</p>
+        </div>
+      </div>
+      <div class="pt-card" style="background-image:url('https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=700&q=85')">
+        <div class="pt-card-overlay">
+          <span class="pt-tag events-tag">Entertainment</span>
+          <h4>Annual Tech Summit</h4>
+          <p>Lagos, Nigeria</p>
+        </div>
+      </div>
+      <div class="pt-card" style="background-image:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&q=85')">
+        <div class="pt-card-overlay">
+          <span class="pt-tag web-tag">Web & AI</span>
+          <h4>E-Commerce Platform</h4>
+          <p>Retail Brand</p>
+        </div>
+      </div>
+      <div class="pt-card" style="background-image:url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=700&q=85')">
+        <div class="pt-card-overlay">
+          <span class="pt-tag" style="color:var(--talent);border-color:var(--talent);background:var(--talent-glow);">Talent</span>
+          <h4>Artist Brand Development</h4>
+          <p>Recording Artist</p>
+        </div>
+      </div>
+    </div>
+    <div class="pt-footer">
+      <a href="portfolio.html" class="btn-outline">View Full Portfolio →</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SECTION 9: TESTIMONIALS                -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="testimonials reveal-section" data-div="none">
+    <canvas data-particles data-mode="flow" data-direction="left" data-density="0.7" aria-hidden="true"></canvas>
+    <div class="container">
+      <p class="section-label">RESULTS</p>
+      <h2 class="section-headline">Not what they said.<br/><em>What they achieved.</em></h2>
+    </div>
+    <div class="testimonials-track">
+      <div class="testi-card">
+        <div class="testi-result">
+          <span class="testi-number">2×</span>
+          <span class="testi-metric">Enquiry Rate</span>
+        </div>
+        <blockquote>"After our rebrand with Spectra, we doubled client enquiries in the first month. People started reaching out saying they found us through our visuals."</blockquote>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background-image:url('https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=100&q=80')"></div>
+          <div><strong>Amaka O.</strong><span>Founder, Luxury Fashion Label — Abuja</span></div>
+        </div>
+        <span class="testi-division-tag business-tag">Business Management</span>
+      </div>
+      <div class="testi-card">
+        <div class="testi-result">
+          <span class="testi-number">+180%</span>
+          <span class="testi-metric">Engagement</span>
+        </div>
+        <blockquote>"The content Spectra Media produced transformed how people perceive our restaurant. We were fully booked for six weeks straight after the campaign launched."</blockquote>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background-image:url('https://images.unsplash.com/photo-1566753323558-f4e0952af115?w=100&q=80')"></div>
+          <div><strong>Nneka A.</strong><span>Owner, Nneka's Kitchen — Abuja</span></div>
+        </div>
+        <span class="testi-division-tag media-tag">Creative Media</span>
+      </div>
+      <div class="testi-card">
+        <div class="testi-result">
+          <span class="testi-number">+60%</span>
+          <span class="testi-metric">Online Sales</span>
+        </div>
+        <blockquote>"We went from losing customers at checkout to a 60% sales increase in 8 weeks. The website Spectra built is our best-performing salesperson."</blockquote>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background-image:url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80')"></div>
+          <div><strong>Emeka T.</strong><span>CEO, Zuri Retail — Lagos</span></div>
+        </div>
+        <span class="testi-division-tag web-tag">Web & AI</span>
+      </div>
+      <div class="testi-card">
+        <div class="testi-result">
+          <span class="testi-number">4,500+</span>
+          <span class="testi-metric">Attendees</span>
+        </div>
+        <blockquote>"TechSummit Lagos sold out three weeks early. Spectra Entertainment handled everything — and the production quality made our event feel like a global conference."</blockquote>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background-image:url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=100&q=80')"></div>
+          <div><strong>Tunde B.</strong><span>Director, TechSummit Lagos</span></div>
+        </div>
+        <span class="testi-division-tag events-tag">Entertainment</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SECTION 10: PROCESS                    -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="process reveal-section" data-div="none">
+    <div class="container">
+      <p class="section-label">HOW WE WORK</p>
+      <h2 class="section-headline">How we move you forward.</h2>
+      <div class="process-track">
+        <div class="process-connector"></div>
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="ps-number">01</div>
+            <h4>Dream</h4>
+            <p>We decode your ambition and map where you want to go.</p>
+          </div>
+          <div class="process-step">
+            <div class="ps-number">02</div>
+            <h4>Plan</h4>
+            <p>We architect the path — strategy, team, timeline, budget.</p>
+          </div>
+          <div class="process-step">
+            <div class="ps-number">03</div>
+            <h4>Create</h4>
+            <p>We produce at global standards, across every division.</p>
+          </div>
+          <div class="process-step">
+            <div class="ps-number">04</div>
+            <h4>Launch</h4>
+            <p>You go live — positioned, confident, and market-ready.</p>
+          </div>
+          <div class="process-step">
+            <div class="ps-number">05</div>
+            <h4>Scale</h4>
+            <p>We stay with you. Growing, adapting, and advancing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SECTION 11: NUMBERS                    -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="numbers reveal-section" data-div="none">
+    <canvas data-particles data-mode="flow" data-direction="right" data-density="0.7" aria-hidden="true"></canvas>
+    <div class="container">
+      <p class="section-label numbers-label">CREDIBILITY</p>
+      <h2 class="section-headline">The numbers speak quietly.<br/><em>You'll feel them loudly.</em></h2>
+      <div class="numbers-grid">
+        <div class="number-card">
+          <div class="nc-value"><span class="counter" data-target="200">0</span>+</div>
+          <div class="nc-label">Projects Delivered</div>
+        </div>
+        <div class="number-card">
+          <div class="nc-value"><span class="counter" data-target="50">0</span>+</div>
+          <div class="nc-label">Events Produced</div>
+        </div>
+        <div class="number-card">
+          <div class="nc-value"><span class="counter" data-target="30">0</span>+</div>
+          <div class="nc-label">Brands Transformed</div>
+        </div>
+        <div class="number-card">
+          <div class="nc-value"><span class="counter" data-target="8">0</span>+</div>
+          <div class="nc-label">Years of Excellence</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SECTION 12: VISION                     -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="vision reveal-section" data-div="none">
+    <canvas data-particles data-mode="flow" data-direction="left" data-density="0.9" aria-hidden="true"></canvas>
+    <div class="vision-overlay"></div>
+    <div class="vision-content">
+      <div class="spectrum-line"></div>
+      <p class="section-label">OUR VISION</p>
+      <h2>We imagine a future where African creators and brands compete — and win — on the global stage.</h2>
+      <p>Every creator we develop, every campaign we produce, every brand we build — it's all a step toward that future. Spectra Group exists to be the engine behind Africa's most influential voices and most powerful brands.</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SECTION 13: FINAL CTA                  -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="final-cta reveal-section" data-div="none">
+    <div class="container">
+      <h2 class="fcta-headline">Let's Build Something<br/><em>Worth Remembering.</em></h2>
+      <p class="fcta-sub">Tell us where you want to go. We'll assemble the team from across Spectra Group to get you there.</p>
+
+      <div class="fcta-options">
+        <a href="https://wa.me/2347053815985?text=Hi%20Spectra%20Group%2C%20I%27d%20like%20to%20book%20a%20discovery%20call%20to%20discuss%20a%20potential%20project." target="_blank" rel="noopener" class="fcta-option">
+          <span class="fcta-option-title">Book a Discovery Call</span>
+          <span class="fcta-option-sub">30 minutes, no obligation</span>
+        </a>
+        <a href="contact.html" class="fcta-option fcta-option-primary">
+          <span class="fcta-option-title">Start Your Project</span>
+          <span class="fcta-option-sub">Tell us the brief, we'll scope it</span>
+        </a>
+        <a href="https://wa.me/2347053815985?text=Hi%20Spectra%20Group%2C%20I%27d%20like%20to%20schedule%20a%20strategy%20session%20for%20my%20brand%2Fbusiness." target="_blank" rel="noopener" class="fcta-option">
+          <span class="fcta-option-title">Schedule a Strategy Session</span>
+          <span class="fcta-option-sub">For brands &amp; scaling founders</span>
+        </a>
+      </div>
+
+      <div class="fcta-direct">
+        <a href="mailto:Samuelonjewu01@gmail.com">Samuelonjewu01@gmail.com</a>
+        <span class="fcta-direct-divider">·</span>
+        <a href="https://wa.me/2347053815985" target="_blank" rel="noopener">WhatsApp +234 705 381 5985</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <svg viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="16,2 30,10 30,26 16,34 2,26 2,10" stroke="white" stroke-width="1" fill="none"/>
+            <line x1="16" y1="2" x2="2" y2="10" stroke="#F97316" stroke-width="1.5"/>
+            <line x1="2" y1="10" x2="2" y2="26" stroke="#14B8A6" stroke-width="1.5"/>
+            <line x1="2" y1="26" x2="16" y2="34" stroke="#F5B400" stroke-width="1.5"/>
+            <line x1="16" y1="34" x2="30" y2="26" stroke="#8B5CF6" stroke-width="1.5"/>
+            <line x1="30" y1="26" x2="30" y2="10" stroke="#3B82F6" stroke-width="1.5"/>
+            <line x1="30" y1="10" x2="16" y2="2" stroke="#EF4444" stroke-width="1.5"/>
+          </svg>
+          <span>SPECTRA<em>GROUP</em></span>
+        </div>
+        <p>Africa's Creator Development & Brand Production Studio.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 10v7M7 7v.01M11 17v-3.5a2.5 2.5 0 0 1 5 0V17M11 10v7"/></svg></a>
+          <a href="#" aria-label="X / Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L2.5 2.25h6.93l4.254 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" stroke="none" fill="white"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>The Group</h5>
+          <a href="services.html#media">Spectra Media</a>
+          <a href="services.html#entertainment">Spectra Entertainment</a>
+          <a href="services.html#talent">Talent Management</a>
+          <a href="services.html#business">Business Management</a>
+          <a href="services.html#web">Web, App & AI</a>
+          <a href="services.html#motion">Motion & Animation</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="index.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+          <a href="contact.html">Start a Project</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="mailto:hello@spectragroup.ng">hello@spectragroup.ng</a>
+          <a href="tel:+2347053815985">+234 705 381 5985</a>
+          <a href="https://wa.me/2347053815985" target="_blank" rel="noopener">WhatsApp Us</a>
+          <span>Abuja, Nigeria</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Spectra Group. All rights reserved.</span>
+      <span>Engineered by E³ Technologies</span>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/2347053815985?text=Hi%20Spectra%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="wa-tooltip">Chat with us</span>
+  </a>
+
+  <script src="particles.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
