@@ -101,21 +101,56 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 
 
 /* ═══════════════════════════════════════════════════
-   3. HOMEPAGE — index.html
+   PAGE TRANSITION — hexagon preloader, runs on every page
 ═══════════════════════════════════════════════════ */
 
-/* ── PRELOADER ── */
+/* ── ENTRANCE: fades the hexagon out once the page is ready.
+   Homepage gets the full branded intro; inner pages release
+   quickly so the hexagon reads as a brief page transition
+   rather than a full loading screen every click. ── */
 (function initPreloader() {
   const preloader = document.getElementById('preloader');
   if (!preloader) return;
+  const isHome = !!document.getElementById('hero');
 
   document.body.style.overflow = 'hidden';
   function release() {
     preloader.classList.add('hidden');
     document.body.style.overflow = '';
   }
-  window.addEventListener('load', () => setTimeout(release, 1800));
-  setTimeout(release, 4000); // safety net if `load` is slow/misses
+  // DOMContentLoaded fires as soon as the HTML is parsed — it does NOT
+  // wait on slow/blocked external resources (Google Fonts, images), so
+  // the page can't get stuck behind the hexagon the way `load` could.
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => setTimeout(release, isHome ? 900 : 250));
+  } else {
+    setTimeout(release, isHome ? 900 : 250);
+  }
+  setTimeout(release, isHome ? 2000 : 800); // hard safety net no matter what
+})();
+
+/* ── EXIT: same hexagon fades back in before navigating to
+   another page on the site, so the logo-in-hexagon graphic
+   is what carries you between pages, not just on first load. ── */
+(function initPageExitTransition() {
+  const preloader = document.getElementById('preloader');
+  if (!preloader) return;
+  const internalPages = ['index.html', 'services.html', 'portfolio.html', 'contact.html', ''];
+
+  document.querySelectorAll('a[href]').forEach(link => {
+    const href = link.getAttribute('href');
+    if (!href || link.target === '_blank') return;
+    if (href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('http')) return;
+    const page = href.split('#')[0].split('?')[0];
+    if (!internalPages.includes(page)) return;
+
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      preloader.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => { window.location.href = href; }, 450);
+    });
+  });
 })();
 
 /* ── HERO COLOUR SLIDESHOW (cycles the 6 Spectra colours + matching copy) ── */

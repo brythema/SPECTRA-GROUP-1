@@ -13,6 +13,34 @@
 </head>
 <body>
 
+  <!-- PRELOADER / INTER-PAGE TRANSITION -->
+  <div id="preloader">
+    <div class="prism-loader">
+      <div class="prism-hex">
+        <img src="images/logo.webp" alt="" class="prism-logo-img" aria-hidden="true">
+        <svg viewBox="0 0 80 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon class="prism-face face-1" points="40,4 76,28 76,64 40,88 4,64 4,28" stroke="white" stroke-width="1.5" fill="none"/>
+          <line class="prism-line line-1" x1="40" y1="4" x2="4" y2="28" stroke="#F97316" stroke-width="1.5"/>
+          <line class="prism-line line-2" x1="4" y1="28" x2="4" y2="64" stroke="#ffffff" stroke-width="1.5"/>
+          <line class="prism-line line-3" x1="4" y1="64" x2="40" y2="88" stroke="#F97316" stroke-width="1.5"/>
+          <line class="prism-line line-4" x1="40" y1="88" x2="76" y2="64" stroke="#050505" stroke-width="1.5"/>
+          <line class="prism-line line-5" x1="76" y1="64" x2="76" y2="28" stroke="#ffffff" stroke-width="1.5"/>
+          <line class="prism-line line-6" x1="76" y1="28" x2="40" y2="4" stroke="#F97316" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <span class="prism-wordmark">SPECTRA</span>
+    </div>
+  </div>
+  <script>
+    /* Fail-safe: guarantees the hexagon disappears even if app.js
+       is missing, 404s, or errors out for any reason. Depends on
+       nothing but the browser itself. */
+    setTimeout(function () {
+      var p = document.getElementById('preloader');
+      if (p) { p.classList.add('hidden'); document.body.style.overflow = ''; }
+    }, 2200);
+  </script>
+
   <!-- NAVIGATION -->
   <nav id="navbar">
     <div class="nav-inner">
@@ -20,14 +48,17 @@
         <div class="logo-mark">
           <img src="images/logo.webp" alt="Spectra Group" class="logo-img"
                onerror="this.closest('.logo-mark').classList.add('logo-fallback')">
+          <svg class="logo-hex-frame" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <polygon points="16,2 30,10 30,26 16,34 2,26 2,10" stroke="white" stroke-width="1.2" fill="none"/>
+          </svg>
           <svg class="logo-fallback-svg" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <polygon points="16,2 30,10 30,26 16,34 2,26 2,10" stroke="white" stroke-width="1.2" fill="none"/>
-            <line x1="16" y1="2" x2="2" y2="10" style="stroke:var(--talent);stroke-width:1.5px"/>
-            <line x1="2" y1="10" x2="2" y2="26" style="stroke:var(--media);stroke-width:1.5px"/>
-            <line x1="2" y1="26" x2="16" y2="34" style="stroke:var(--events);stroke-width:1.5px"/>
-            <line x1="16" y1="34" x2="30" y2="26" style="stroke:var(--web);stroke-width:1.5px"/>
-            <line x1="30" y1="26" x2="30" y2="10" style="stroke:var(--motion);stroke-width:1.5px"/>
-            <line x1="30" y1="10" x2="16" y2="2" style="stroke:var(--business);stroke-width:1.5px"/>
+            <line x1="16" y1="2" x2="2" y2="10" style="stroke:var(--brand-orange);stroke-width:1.5px"/>
+            <line x1="2" y1="10" x2="2" y2="26" style="stroke:#ffffff;stroke-width:1.5px"/>
+            <line x1="2" y1="26" x2="16" y2="34" style="stroke:var(--brand-orange);stroke-width:1.5px"/>
+            <line x1="16" y1="34" x2="30" y2="26" style="stroke:var(--black);stroke-width:1.5px"/>
+            <line x1="30" y1="26" x2="30" y2="10" style="stroke:#ffffff;stroke-width:1.5px"/>
+            <line x1="30" y1="10" x2="16" y2="2" style="stroke:var(--brand-orange);stroke-width:1.5px"/>
           </svg>
         </div>
         <span>SPECTRA<em>GROUP</em></span>
@@ -79,39 +110,26 @@
   <!-- GALLERY GRID -->
   <section class="gallery-section">
     <div class="gallery-intro">
-      <p>13 projects across all six studios. Click any card for the full case study — challenge, approach, and outcome.</p>
-      <span class="gallery-count">13 Projects</span>
+      <p>7 projects across all six studios. Click any card for the full case study — challenge, approach, and outcome.</p>
+      <span class="gallery-count">7 Projects</span>
     </div>
     <div class="gallery-grid">
 
       <!-- Media -->
       <div class="gallery-item wide"
-        data-filter="media" data-division="Creative Media" data-title="Lagos Fashion Week — Campaign Visuals"
+        data-filter="media" data-division="Creative Media" data-title=" Fashion Week — Campaign Visuals"
         data-client="Lagos Fashion House" data-stat="+220% Brand Awareness"
         data-challenge="A growing fashion label needed editorial-grade visuals to break into national media."
-        data-approach="We directed a full campaign shoot with 3 models, custom lighting rigs, and location scouting across Lagos Island."
+        data-approach="We directed a full campaign shoot with 3 models, custom lighting rigs, and location scouting across Abuja."
         data-outcome="The visuals were picked up by 4 national fashion publications and tripled the brand's social following within 60 days."
-        style="background-image:url('https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&q=85')">
+        style="background-image:url('images/1.webp')">
         <div class="gallery-overlay">
           <span class="gallery-tag media-tag">Creative Media</span>
-          <h4>Lagos Fashion Campaign</h4>
+          <h4>Fashion Campaign</h4>
           <p>Fashion Label · Abuja</p>
         </div>
       </div>
 
-      <div class="gallery-item"
-        data-filter="media" data-division="Creative Media" data-title="Restaurant Brand Film — Nneka's Kitchen"
-        data-client="Nneka's Kitchen" data-stat="+180% Table Bookings"
-        data-challenge="A premium restaurant was losing walk-ins to competitors with stronger digital presence."
-        data-approach="We shot a cinematic 90-second brand film capturing the warmth, quality, and story behind the kitchen."
-        data-outcome="The film went viral on Instagram, driving fully-booked weekends for 6 consecutive weeks."
-        style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=85')">
-        <div class="gallery-overlay">
-          <span class="gallery-tag media-tag">Creative Media</span>
-          <h4>Restaurant Brand Film</h4>
-          <p>Food & Hospitality · Abuja</p>
-        </div>
-      </div>
 
       <div class="gallery-item"
         data-filter="media" data-division="Creative Media" data-title="Real Estate Campaign — Crown Allied Homes"
@@ -119,7 +137,7 @@
         data-challenge="A premium real estate developer needed visuals to justify top-tier pricing in a competitive Abuja market."
         data-approach="Architectural photography, aerial drone coverage, and video walkthroughs for 12 property listings."
         data-outcome="All campaign properties sold within 90 days. Developer retained us for ongoing visual production."
-        style="background-image:url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=85')">
+        style="background-image:url('images/3.webp')">
         <div class="gallery-overlay">
           <span class="gallery-tag media-tag">Creative Media</span>
           <h4>Real Estate Campaign</h4>
@@ -129,47 +147,21 @@
 
       <!-- Entertainment -->
       <div class="gallery-item"
-        data-filter="events" data-division="Spectra Entertainment" data-title="TechSummit Lagos — Annual Conference"
+        data-filter="events" data-division="Spectra Entertainment" data-title="Color Fest Kubwa — Youth Party"
         data-client="TechSummit Lagos" data-stat="4,500 Attendees"
         data-challenge="Nigeria's fastest-growing tech conference needed production to match its global ambition."
         data-approach="Full event production: stage design, AV, lighting, speaker logistics, live streaming, and branded experience zones."
-        data-outcome="Sold out 3 weeks early. Rated #1 tech event in Nigeria by attendees. Renewed for 3 more editions."
-        style="background-image:url('https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=85')">
+        data-outcome="Sold out 3 weeks early. Renewed for 3 more editions."
+        style="background-image:url('images/4.webp')">
         <div class="gallery-overlay">
           <span class="gallery-tag events-tag">Entertainment</span>
-          <h4>TechSummit Lagos</h4>
-          <p>Conference · Lagos</p>
+          <h4>Color Fest Abuja</h4>
+          <p>Youth Party · Abuja</p>
         </div>
       </div>
 
-      <div class="gallery-item tall"
-        data-filter="events" data-division="Spectra Entertainment" data-title="Brand Activation — Zuri Cosmetics Launch"
-        data-client="Zuri Cosmetics" data-stat="2,200 Walk-in Visitors"
-        data-challenge="A cosmetics brand needed a launch event that felt premium but approachable for a millennial audience."
-        data-approach="Pop-up activation with live demos, influencer appearances, custom lighting, branded gifting, and social media integration."
-        data-outcome="2,200 walk-ins across 2 days. The activation generated ₦48M in first-week product orders."
-        style="background-image:url('https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=85')">
-        <div class="gallery-overlay">
-          <span class="gallery-tag events-tag">Entertainment</span>
-          <h4>Brand Activation Launch</h4>
-          <p>FMCG · Abuja</p>
-        </div>
-      </div>
 
       <!-- Talent -->
-      <div class="gallery-item"
-        data-filter="talent" data-division="Talent Management" data-title="Creator Brand Development — Visual Artist"
-        data-client="Rising Visual Artist" data-stat="3 Brand Deals Secured"
-        data-challenge="A talented visual artist had 50K followers but no monetisation strategy or professional brand identity."
-        data-approach="Full personal brand audit, new visual identity system, content strategy overhaul, and direct outreach to 12 aligned brands."
-        data-outcome="Secured 3 brand partnerships worth ₦6.5M total within 4 months of brand development."
-        style="background-image:url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=800&q=85')">
-        <div class="gallery-overlay">
-          <span class="gallery-tag" style="color:var(--talent);border-color:var(--talent);background:var(--talent-glow);">Talent</span>
-          <h4>Creator Brand Development</h4>
-          <p>Visual Artist · Lagos</p>
-        </div>
-      </div>
 
       <div class="gallery-item"
         data-filter="talent" data-division="Talent Management" data-title="Music Artist — Full Brand & Management Rollout"
@@ -177,7 +169,7 @@
         data-challenge="An emerging Afrobeats artist had authentic sound but zero brand structure, digital presence, or industry connections."
         data-approach="Artist management package: brand identity, EPK, social media rebuild, playlist pitching, label introduction strategy."
         data-outcome="Streaming numbers grew 4× in 6 months. First label meeting secured. Brand deal with a beverage company signed."
-        style="background-image:url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=85')">
+        style="background-image:url('images/7.webp')">
         <div class="gallery-overlay">
           <span class="gallery-tag" style="color:var(--talent);border-color:var(--talent);background:var(--talent-glow);">Talent</span>
           <h4>Artist Brand Rollout</h4>
@@ -186,19 +178,6 @@
       </div>
 
       <!-- Business -->
-      <div class="gallery-item"
-        data-filter="business" data-division="Business Management" data-title="Complete Brand Overhaul — Luxury Fashion Label"
-        data-client="Premium Fashion Brand" data-stat="×2 Enquiry Rate"
-        data-challenge="An established fashion brand had loyal customers but couldn't attract high-ticket clients or media coverage."
-        data-approach="Full brand audit, new positioning strategy, refined visual language, PR media list build, and press release campaign."
-        data-outcome="Enquiry rate doubled in 30 days. Featured in 2 national lifestyle publications. Average order value increased 40%."
-        style="background-image:url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=85')">
-        <div class="gallery-overlay">
-          <span class="gallery-tag business-tag">Business</span>
-          <h4>Brand Overhaul</h4>
-          <p>Fashion Label · Abuja</p>
-        </div>
-      </div>
 
       <div class="gallery-item"
         data-filter="business" data-division="Business Management" data-title="Go-to-Market Strategy — Tech Startup"
@@ -206,11 +185,11 @@
         data-challenge="A fintech startup had a solid product but no clear market positioning or investor-ready brand story."
         data-approach="Brand positioning, narrative architecture, investor deck design, marketing strategy, and media introduction plan."
         data-outcome="Seed round closed successfully. Featured on Techpoint and Disrupt Africa. Customer acquisition began at 3× target rate."
-        style="background-image:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=85')">
+        style="background-image:url('images/9.webp')">
         <div class="gallery-overlay">
           <span class="gallery-tag business-tag">Business</span>
-          <h4>Startup Go-to-Market</h4>
-          <p>Fintech · Lagos</p>
+          <h4>Tech Startup</h4>
+          <p>African-tech · Abuja</p>
         </div>
       </div>
 
@@ -221,27 +200,14 @@
         data-challenge="A growing retail brand was losing customers at checkout due to a slow, confusing e-commerce experience."
         data-approach="Complete e-commerce rebuild: UI/UX redesign, payment gateway integration, mobile-first architecture, CRO testing."
         data-outcome="Online sales grew 60% in 8 weeks. Cart abandonment dropped by 44%. Mobile conversion rate tripled."
-        style="background-image:url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=85')">
+        style="background-image:url('images/10.webp')">
         <div class="gallery-overlay">
           <span class="gallery-tag web-tag">Web & AI</span>
           <h4>E-Commerce Platform</h4>
-          <p>Retail · Lagos</p>
+          <p>Retail · Abuja</p>
         </div>
       </div>
 
-      <div class="gallery-item"
-        data-filter="web" data-division="Web, App & AI" data-title="Corporate Website — Real Estate Developer"
-        data-client="Premium Property Developer" data-stat="+3× Lead Volume"
-        data-challenge="A real estate developer's website hadn't been updated in 4 years and was losing leads to better-presented competitors."
-        data-approach="Full website redesign with property listings CMS, virtual tour integration, WhatsApp lead capture, and SEO foundation."
-        data-outcome="Lead volume tripled within 60 days. Site now ranks page 1 for 6 key Abuja real estate search terms."
-        style="background-image:url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&q=85')">
-        <div class="gallery-overlay">
-          <span class="gallery-tag web-tag">Web & AI</span>
-          <h4>Corporate Website Redesign</h4>
-          <p>Real Estate · Abuja</p>
-        </div>
-      </div>
 
       <!-- Motion -->
       <div class="gallery-item"
@@ -250,7 +216,7 @@
         data-challenge="A consumer brand needed a launch video that stood out on social media amid heavy advertising competition."
         data-approach="30-second 2D animated commercial with kinetic brand typography, product feature animations, and broadcast-grade colour grade."
         data-outcome="The video achieved 4.2M views organically across Instagram and YouTube in the first 3 weeks."
-        style="background-image:url('https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&q=85')">
+        style="background-image:url('images/12.webp')">
         <div class="gallery-overlay">
           <span class="gallery-tag motion-tag">Motion</span>
           <h4>Product Launch Animation</h4>
@@ -258,20 +224,64 @@
         </div>
       </div>
 
-      <div class="gallery-item"
-        data-filter="motion" data-division="Motion & Animation" data-title="Brand Identity Motion System — Tech Company"
-        data-client="Nigerian Tech Startup" data-stat="Complete Motion System"
-        data-challenge="A funded tech startup needed a full animated brand system for pitches, social, and product onboarding."
-        data-approach="Logo reveal animation, kinetic typography system, UI micro-animations, and a suite of social media motion templates."
-        data-outcome="Complete motion brand system delivered in 3 weeks. Now used across all investor presentations and digital touchpoints."
-        style="background-image:url('https://images.unsplash.com/photo-1608501078713-8e445a709b39?w=800&q=85')">
-        <div class="gallery-overlay">
-          <span class="gallery-tag motion-tag">Motion</span>
-          <h4>Brand Motion System</h4>
-          <p>Tech Startup · Abuja</p>
-        </div>
-      </div>
 
+    </div>
+  <!-- MEDIA -->
+  <section class="media-section">
+    <div class="container">
+      <p class="section-label">BEHIND THE SCENES</p>
+      <h2 class="section-headline">Media</h2>
+      <p class="media-sub">Moments from productions, shoots, and activations across the Spectra studios.</p>
+    </div>
+    <div class="media-grid">
+      <div class="media-item">
+        <img src="images/media/8.webp" alt="Spectra Group behind-the-scenes photo 8" loading="lazy">
+      </div>
+      <div class="media-item">
+        <img src="images/media/9.webp" alt="Spectra Group behind-the-scenes photo 9" loading="lazy">
+      </div>
+      <div class="media-item">
+        <img src="images/media/10.webp" alt="Spectra Group behind-the-scenes photo 10" loading="lazy">
+      </div>
+      <div class="media-item">
+        <img src="images/media/11.webp" alt="Spectra Group behind-the-scenes photo 11" loading="lazy">
+      </div>
+      <div class="media-item">
+        <img src="images/media/12.webp" alt="Spectra Group behind-the-scenes photo 12" loading="lazy">
+      </div>
+      <div class="media-item">
+        <img src="images/media/13.webp" alt="Spectra Group behind-the-scenes photo 13" loading="lazy">
+      </div>
+      <div class="media-item">
+        <img src="images/media/14.webp" alt="Spectra Group behind-the-scenes photo 14" loading="lazy">
+      </div>
+      <div class="media-item">
+        <img src="images/media/15.webp" alt="Spectra Group behind-the-scenes photo 15" loading="lazy">
+      </div>
+      <div class="media-item">
+        <img src="images/media/16.webp" alt="Spectra Group behind-the-scenes photo 16" loading="lazy">
+      </div>
+      <div class="media-item">
+        <img src="images/media/17.webp" alt="Spectra Group behind-the-scenes photo 17" loading="lazy">
+      </div>
+      <div class="media-item">
+        <img src="images/media/18.webp" alt="Spectra Group behind-the-scenes photo 18" loading="lazy">
+      </div>
+      <div class="media-item">
+        <img src="images/media/19.webp" alt="Spectra Group behind-the-scenes photo 19" loading="lazy">
+      </div>
+      <div class="media-item">
+        <img src="images/media/20.webp" alt="Spectra Group behind-the-scenes photo 20" loading="lazy">
+      </div>
+      <div class="media-item">
+        <img src="images/media/21.webp" alt="Spectra Group behind-the-scenes photo 21" loading="lazy">
+      </div>
+      <div class="media-item">
+        <img src="images/media/22.webp" alt="Spectra Group behind-the-scenes photo 22" loading="lazy">
+      </div>
+      <div class="media-item">
+        <img src="images/media/23.webp" alt="Spectra Group behind-the-scenes photo 23" loading="lazy">
+      </div>
     </div>
   </section>
 
@@ -329,11 +339,11 @@
           <svg viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
             <polygon points="16,2 30,10 30,26 16,34 2,26 2,10" stroke="white" stroke-width="1" fill="none"/>
             <line x1="16" y1="2" x2="2" y2="10" stroke="#F97316" stroke-width="1.5"/>
-            <line x1="2" y1="10" x2="2" y2="26" stroke="#14B8A6" stroke-width="1.5"/>
-            <line x1="2" y1="26" x2="16" y2="34" stroke="#F5B400" stroke-width="1.5"/>
-            <line x1="16" y1="34" x2="30" y2="26" stroke="#8B5CF6" stroke-width="1.5"/>
-            <line x1="30" y1="26" x2="30" y2="10" stroke="#3B82F6" stroke-width="1.5"/>
-            <line x1="30" y1="10" x2="16" y2="2" stroke="#EF4444" stroke-width="1.5"/>
+            <line x1="2" y1="10" x2="2" y2="26" stroke="#ffffff" stroke-width="1.5"/>
+            <line x1="2" y1="26" x2="16" y2="34" stroke="#F97316" stroke-width="1.5"/>
+            <line x1="16" y1="34" x2="30" y2="26" stroke="#050505" stroke-width="1.5"/>
+            <line x1="30" y1="26" x2="30" y2="10" stroke="#ffffff" stroke-width="1.5"/>
+            <line x1="30" y1="10" x2="16" y2="2" stroke="#F97316" stroke-width="1.5"/>
           </svg>
           <span>SPECTRA<em>GROUP</em></span>
         </div>
@@ -373,7 +383,7 @@
     </div>
     <div class="footer-bottom">
       <span>© 2026 Spectra Group. All rights reserved.</span>
-      <span>Engineered by E³ Technologies</span>
+      <span>Engineered by <a href="https://www.eee3.com.ng" target="_blank" rel="noopener">E³ Technologies</a></span>
     </div>
   </footer>
 

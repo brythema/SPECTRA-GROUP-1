@@ -39,17 +39,13 @@
   --motion-glow:   rgba(59,130,246,0.22);
   --business-glow: rgba(139,92,246,0.25);
 
-  /* The 5 curated "Spectra colours": orange (primary),
-     black, white, + teal and violet as the two coolest,
-     most premium-reading complements. Used site-wide for
-     the hero colour-slide, heading gradient, and CTAs. */
   --brand-orange: var(--media);
-  --brand-teal:   var(--web);
-  --brand-violet: var(--business);
 
-  /* Spectrum gradient — true prism order */
-  --spectrum: linear-gradient(90deg, var(--talent), var(--media), var(--events), var(--web), var(--motion), var(--business));
-  --spectrum-core: linear-gradient(90deg, var(--brand-orange), var(--brand-teal), var(--brand-violet));
+  /* Spectrum gradient — the site's heading/accent gradient.
+     White and orange only — black was dropped since any letter
+     landing on black would blend straight into the dark section
+     backgrounds and become unreadable. */
+  --spectrum: linear-gradient(90deg, var(--white), var(--brand-orange));
 
   /* Typography */
   --font-display: 'Syne', sans-serif;
@@ -134,10 +130,26 @@ ul { list-style: none; }
 }
 #preloader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
 
-.prism-loader svg {
+.prism-hex {
+  position: relative;
   width: 60px;
   height: 70px;
-  animation: prism-spin 2s linear infinite;
+}
+.prism-logo-img {
+  position: absolute;
+  inset: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  object-fit: cover;
+  clip-path: polygon(50% 5.56%, 93.75% 27.78%, 93.75% 72.22%, 50% 94.44%, 6.25% 72.22%, 6.25% 27.78%);
+  animation: prism-spin 7s linear infinite;
+}
+.prism-loader svg {
+  position: absolute;
+  inset: 0;
+  width: 60px;
+  height: 70px;
+  animation: prism-spin 7s linear infinite;
 }
 @keyframes prism-spin {
   0%   { transform: rotate(0deg); }
@@ -212,20 +224,34 @@ ul { list-style: none; }
   align-items: center;
   justify-content: center;
 }
+/* Hexagon geometry shared by the logo mark and the page-transition
+   hexagon below — same polygon (viewBox 0 0 32 36) expressed as
+   clip-path percentages so a plain rectangular photo reads as a
+   hexagon-cut logo instead of a square/round crop. */
 .logo-img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  animation: logoSpin 46s linear infinite;
+  object-fit: cover;
+  clip-path: polygon(50% 5.56%, 93.75% 27.78%, 93.75% 72.22%, 50% 94.44%, 6.25% 72.22%, 6.25% 27.78%);
+  animation: logoSpin 90s linear infinite;
   filter: drop-shadow(0 0 8px var(--media-glow));
   transition: filter 0.3s;
 }
+.logo-hex-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  animation: logoSpin 90s linear infinite;
+}
 .nav-logo:hover .logo-img { filter: drop-shadow(0 0 14px var(--media-glow)); }
-.logo-fallback-svg { display: none; width: 38px; height: 44px; }
-.logo-mark.logo-fallback .logo-img { display: none; }
+.logo-fallback-svg { display: none; width: 38px; height: 44px; position: absolute; inset: 0; }
+.logo-mark.logo-fallback .logo-img,
+.logo-mark.logo-fallback .logo-hex-frame { display: none; }
 .logo-mark.logo-fallback .logo-fallback-svg {
   display: block;
-  animation: logoSpin 46s linear infinite;
+  animation: logoSpin 90s linear infinite;
 }
 @keyframes logoSpin { to { transform: rotate(360deg); } }
 @media (prefers-reduced-motion: reduce) {
@@ -1719,6 +1745,17 @@ ul { list-style: none; }
   font-size: 0.78rem;
   color: var(--gray);
 }
+.footer-bottom span a {
+  color: var(--gray);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.25s, border-color 0.25s;
+}
+.footer-bottom span a:hover,
+.footer-bottom span a:focus-visible {
+  color: var(--brand-orange);
+  border-bottom-color: var(--brand-orange);
+}
 
 /* ══════════════════════════════════════════════════
    REVEAL ANIMATIONS
@@ -2811,6 +2848,58 @@ ul { list-style: none; }
   background: linear-gradient(180deg, transparent 50%, rgba(5,5,5,0.5) 100%);
   pointer-events: none;
 }
+
+/* ── MEDIA (behind-the-scenes grid, below the portfolio cards) ── */
+.media-section {
+  padding: 5rem 0 6rem;
+  background: var(--black);
+}
+.media-section .container { padding: 0 clamp(1.25rem, 4vw, 3rem); text-align: center; margin-bottom: 2.5rem; }
+.media-section .section-headline {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--white);
+  margin: 0.5rem 0;
+}
+.media-sub {
+  color: var(--white-dim);
+  max-width: 480px;
+  margin: 0 auto;
+}
+.media-grid {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 4vw, 3rem);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.9rem;
+}
+.media-item {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--off-black);
+  border: 1px solid var(--glass-border);
+}
+.media-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s var(--ease);
+}
+.media-item:hover img { transform: scale(1.08); }
+
+@media (max-width: 860px) {
+  .media-grid { grid-template-columns: repeat(3, 1fr); gap: 0.6rem; }
+}
+@media (max-width: 520px) {
+  .media-grid { grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+}
+
 .portfolio-end-cta {
   padding: 6rem 0;
   text-align: center;
@@ -2914,22 +3003,6 @@ ul { list-style: none; }
   .lightbox { padding: 0.5rem; }
   .lb-inner { width: 100%; max-height: 94vh; border-radius: 16px; }
   .lb-image-wrap { min-height: 160px; }
-}
-
-/* ── PORTFOLIO CTA ── */
-.portfolio-cta {
-  padding: 5rem 0;
-  background: var(--off-black);
-  border-top: 1px solid var(--glass-border);
-  text-align: center;
-}
-.portfolio-cta h2 {
-  font-family: var(--font-display);
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  color: var(--white);
-  margin-bottom: 2rem;
 }
 
 /* Gallery responsive behaviour now lives with the grid rules above
